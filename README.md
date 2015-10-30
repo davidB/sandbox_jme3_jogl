@@ -1,0 +1,4 @@
+to run :
+```
+gradle exec
+```
