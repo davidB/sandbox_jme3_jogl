@@ -1,0 +1,84 @@
+plugins {
+  id "nebula.provided-base" version "2.2.2"
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'maven-publish'
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+version = '0.1.0'
+group = 'com.github.davidb'
+
+repositories {
+	mavenLocal()
+	jcenter()
+	maven { url "http://updates.jmonkeyengine.org/maven/"}
+	maven { url "https://jitpack.io" }
+}
+
+task exec(type:JavaExec) {
+   main = System.getProperty("exec.mainClass") ?: "sandbox.Main0"
+   classpath = sourceSets.main.runtimeClasspath
+}
+
+def jme_version = '3.1.0-SNAPSHOT'
+def jme_group = 'com.jme3'
+
+def v_jogl = '2.3.1'
+
+
+dependencies {
+	compile "${jme_group}:jme3-core:${jme_version}"
+	runtime "${jme_group}:jme3-jogl:${jme_version}"
+	runtime "${jme_group}:jme3-desktop:${jme_version}"
+}
+
+
+sourceSets {
+	main {
+		resources {
+			srcDirs = ["$projectDir/src/main/resources"]
+			exclude "**/.keep"
+			exclude "**/*.blend*"
+			exclude "**/*.ftl"
+		}
+	}
+	test {
+		resources {
+			exclude "**/.keep"
+		}
+	}
+}
+
+def pomConfig = {
+	licenses {
+		license {
+			name "Public domain (CC0-1.0)"
+			url "http://creativecommons.org/publicdomain/zero/1.0/"
+			distribution "repo"
+		}
+	}
+	developers {
+		developer {
+			id "davidB"
+			name "David Bernard"
+		}
+	}
+}
+
+publishing {
+	publications {
+		mavenStuff(MavenPublication) {
+			from components.java
+			pom.withXml {
+				def root = asNode()
+				if (description) root.appendNode('description', description)
+				root.children().last() + pomConfig
+			}
+		}
+	}
+}
