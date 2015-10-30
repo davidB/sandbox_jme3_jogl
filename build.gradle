@@ -29,13 +29,17 @@ task exec(type:JavaExec) {
 def jme_version = '3.1.0-SNAPSHOT'
 def jme_group = 'com.jme3'
 
-def v_jogl = '2.3.1'
+def jogl_version = '2.3.2'
 
 
 dependencies {
 	compile "${jme_group}:jme3-core:${jme_version}"
 	runtime "${jme_group}:jme3-jogl:${jme_version}"
 	runtime "${jme_group}:jme3-desktop:${jme_version}"
+  // force
+  runtime "org.jogamp.gluegen:gluegen-rt-main:${jogl_version}"
+  runtime "org.jogamp.jogl:jogl-all-main:${jogl_version}"
+  runtime "org.jogamp.joal:joal-main:${jogl_version}"
 }
 
 
