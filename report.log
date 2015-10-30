@@ -1,0 +1,1457 @@
+:compileJava UP-TO-DATE
+:processResources UP-TO-DATE
+:classes UP-TO-DATE
+:execoct. 30, 2015 10:26:43 PM com.jme3.system.JmeDesktopSystem initialize
+INFOS: Running on jMonkeyEngine 3.1-5289
+ * Branch: master
+ * Git Hash: b34649d
+ * Build Date: 2015-10-27
+GLProfile.initSingleton() - thread main
+    [2]: com.jogamp.opengl.GLProfile.initSingleton(GLProfile.java:206)
+    [3]: com.jogamp.opengl.GLProfile.getProfileMap(GLProfile.java:2272)
+    [4]: com.jogamp.opengl.GLProfile.get(GLProfile.java:987)
+    [5]: com.jogamp.opengl.GLProfile.getDefault(GLProfile.java:721)
+    [6]: com.jogamp.opengl.GLProfile.getDefault(GLProfile.java:732)
+    [7]: com.jme3.system.jogl.JoglNewtAbstractDisplay.initGLCanvas(JoglNewtAbstractDisplay.java:79)
+    [8]: com.jme3.system.jogl.JoglNewtDisplay.privateInit(JoglNewtDisplay.java:145)
+    [9]: com.jme3.system.jogl.JoglNewtDisplay.create(JoglNewtDisplay.java:168)
+    [10]: com.jme3.app.Application.start(Application.java:446)
+    [11]: com.jme3.app.Application.start(Application.java:407)
+    [12]: com.jme3.app.SimpleApplication.start(SimpleApplication.java:132)
+    [13]: sandbox.Main0.main(Main0.java:31)
+main - Info: NativeWindowFactory.<init>
+main - NativeWindowFactory.initSingleton()
+JAWTUtil initialization (JAWT/JNI/...); SKIP_AWT_HIDPI false
+JAWTUtil.getJAWT(tryOffscreenLayer false, tryOnscreen true)
+OGLUtilities.UNDEFINED = 0
+OGLUtilities.WINDOW = 1
+OGLUtilities.PBUFFER = 2
+OGLUtilities.TEXTURE = 3
+OGLUtilities.FLIP_BACKBUFFER = 4
+OGLUtilities.FBOBJECT = 5
+Checking for Java2D/OpenGL support
+Java2D support: default GraphicsConfiguration = sun.java2d.xr.XRGraphicsConfig
+JOGL/Java2D OGL Pipeline active false, resourceCompatible false
+JAWTUtil: Has sun.awt.SunToolkit.awtLock/awtUnlock true
+JAWTUtil: Has Java2D true
+JAWTUtil: Is headless false
+JAWTUtil: AWT Desktop hints 0
+JAWTUtil: OffscreenLayer Supported: false - Required false
+
+X11Util.initSingleton()
+Info: NativeWindow native init passed
+X11Util.initSingleton(): OK true],
+	 X11 Display(NULL) <:0.0>,
+	 XSynchronize Enabled: false,
+	 X11_EXTENSION_ATIFGLRXDRI false,
+	 X11_EXTENSION_ATIFGLEXTENSION false,
+	 requiresToolkitLock true,
+	 hasThreadingIssues false,
+	 markAllDisplaysUnclosable false
+NativeWindowFactory.registerFactory() interface com.jogamp.nativewindow.NativeWindow -> jogamp.nativewindow.NativeWindowFactoryImpl@2acf57e3
+NativeWindowFactory.registerFactory() class java.awt.Component -> jogamp.nativewindow.NativeWindowFactoryImpl@2acf57e3
+NativeWindowFactory requiresToolkitLock true, desktopHasThreadingIssues false
+NativeWindowFactory isAWTAvailable true, defaultFactory jogamp.nativewindow.NativeWindowFactoryImpl@2acf57e3
+main - Info: GraphicsConfigurationFactory.<init>
+main - GraphicsConfigurationFactory.initSingleton()
+GraphicsConfigurationFactory.registerFactory() put DeviceCapsType[com.jogamp.nativewindow.AbstractGraphicsDevice, com.jogamp.nativewindow.CapabilitiesImmutable] -> jogamp.nativewindow.DefaultGraphicsConfigurationFactoryImpl@2f7a2457, overridding: null
+GraphicsConfigurationFactory.registerFactory() put DeviceCapsType[com.jogamp.nativewindow.x11.X11GraphicsDevice, com.jogamp.nativewindow.CapabilitiesImmutable] -> jogamp.nativewindow.x11.X11GraphicsConfigurationFactory@3498ed, overridding: null
+GraphicsConfigurationFactory.registerFactory() put DeviceCapsType[com.jogamp.nativewindow.awt.AWTGraphicsDevice, com.jogamp.nativewindow.CapabilitiesImmutable] -> jogamp.nativewindow.x11.awt.X11AWTGraphicsConfigurationFactory@73f792cf, overridding: null
+GLProfile.init - thread: main
+-----------------------------------------------------------------------------------------------------
+Platform: LINUX / Linux 4.2.3-1-ARCH (4.2.3), amd64 (X86_64, GENERIC_ABI), 4 cores, littleEndian true
+MachineDataInfo: runtimeValidated true, 32Bit false, primitive size / alignment:
+  int8    1 / 1, int16   2 / 2
+  int     4 / 4, long    8 / 8
+  int32   4 / 4, int64   8 / 8
+  float   4 / 4, double  8 / 8, ldouble 16 / 16
+  pointer 8 / 8, page    4096
+Platform: Java Version: 1.8.0_51 (1.8.0u51), VM: Java HotSpot(TM) 64-Bit Server VM, Runtime: Java(TM) SE Runtime Environment
+Platform: Java Vendor: Oracle Corporation, http://java.oracle.com/, JavaSE: true, Java6: true, AWT enabled: true
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+Package: com.jogamp.common
+Extension Name: com.jogamp.common
+Specification Title: GlueGen Java Bindings Generator
+Specification Vendor: JogAmp Community
+Specification Version: 2.3
+Implementation Title: GlueGen Run-Time
+Implementation Vendor: JogAmp Community
+Implementation Vendor ID: com.jogamp
+Implementation URL: http://jogamp.org/
+Implementation Version: 2.3.1
+Implementation Build: 2.3-b857-20150327
+Implementation Branch: origin/master
+Implementation Commit: f1eba171ddd887a2daa3dfa2ac90ac864c5b22d4
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+Package: com.jogamp.nativewindow
+Extension Name: com.jogamp.opengl
+Specification Title: Java Bindings for OpenGL API Specification
+Specification Vendor: JogAmp Community
+Specification Version: 2.3
+Implementation Title: Java Bindings for OpenGL Runtime Environment
+Implementation Vendor: JogAmp Community
+Implementation Vendor ID: com.jogamp
+Implementation URL: http://jogamp.org/
+Implementation Version: 2.3.1
+Implementation Build: 2.3-b1391-20150327
+Implementation Branch: origin/master
+Implementation Commit: b142c7130c05c9c0ae97841b4ff626f528c45438
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+Package: com.jogamp.opengl
+Extension Name: com.jogamp.opengl
+Specification Title: Java Bindings for OpenGL API Specification
+Specification Vendor: JogAmp Community
+Specification Version: 2.3
+Implementation Title: Java Bindings for OpenGL Runtime Environment
+Implementation Vendor: JogAmp Community
+Implementation Vendor ID: com.jogamp
+Implementation URL: http://jogamp.org/
+Implementation Version: 2.3.1
+Implementation Build: 2.3-b1391-20150327
+Implementation Branch: origin/master
+Implementation Commit: b142c7130c05c9c0ae97841b4ff626f528c45438
+-----------------------------------------------------------------------------------------------------
+GLDrawableFactory.static - Native OS Factory for: .x11: jogamp.opengl.x11.glx.X11GLXDrawableFactory
+GraphicsConfigurationFactory.registerFactory() put DeviceCapsType[com.jogamp.nativewindow.x11.X11GraphicsDevice, com.jogamp.opengl.GLCapabilitiesImmutable] -> jogamp.opengl.x11.glx.X11GLXGraphicsConfigurationFactory@43814d18, overridding: null
+    [2]: com.jogamp.nativewindow.GraphicsConfigurationFactory.getFactory(GraphicsConfigurationFactory.java:231)
+    [3]: jogamp.opengl.x11.glx.X11GLXGraphicsConfigurationFactory.registerFactory(X11GLXGraphicsConfigurationFactory.java:87)
+    [4]: jogamp.opengl.x11.glx.X11GLXDrawableFactory.<init>(X11GLXDrawableFactory.java:127)
+    [5]: sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+    [6]: sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+    [7]: sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+    [8]: java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+    [9]: com.jogamp.common.util.ReflectionUtil.createInstance(ReflectionUtil.java:265)
+    [10]: com.jogamp.common.util.ReflectionUtil.createInstance(ReflectionUtil.java:287)
+    [11]: com.jogamp.common.util.ReflectionUtil.createInstance(ReflectionUtil.java:307)
+    [12]: com.jogamp.common.util.ReflectionUtil.createInstance(ReflectionUtil.java:329)
+    [13]: com.jogamp.opengl.GLDrawableFactory.initSingletonImpl(GLDrawableFactory.java:152)
+    [14]: com.jogamp.opengl.GLDrawableFactory.initSingleton(GLDrawableFactory.java:115)
+    [15]: com.jogamp.opengl.GLProfile.initProfilesForDefaultDevices(GLProfile.java:1741)
+    [16]: com.jogamp.opengl.GLProfile.access$000(GLProfile.java:79)
+    [17]: com.jogamp.opengl.GLProfile$1.run(GLProfile.java:229)
+    [18]: java.security.AccessController.doPrivileged(Native Method)
+    [19]: com.jogamp.opengl.GLProfile.initSingleton(GLProfile.java:215)
+    [20]: com.jogamp.opengl.GLProfile.getProfileMap(GLProfile.java:2272)
+    [21]: com.jogamp.opengl.GLProfile.get(GLProfile.java:987)
+    [22]: com.jogamp.opengl.GLProfile.getDefault(GLProfile.java:721)
+    [23]: com.jogamp.opengl.GLProfile.getDefault(GLProfile.java:732)
+    [24]: com.jme3.system.jogl.JoglNewtAbstractDisplay.initGLCanvas(JoglNewtAbstractDisplay.java:79)
+    [25]: com.jme3.system.jogl.JoglNewtDisplay.privateInit(JoglNewtDisplay.java:145)
+    [26]: com.jme3.system.jogl.JoglNewtDisplay.create(JoglNewtDisplay.java:168)
+    [27]: com.jme3.app.Application.start(Application.java:446)
+    [28]: com.jme3.app.Application.start(Application.java:407)
+    [29]: com.jme3.app.SimpleApplication.start(SimpleApplication.java:132)
+    [30]: sandbox.Main0.main(Main0.java:31)
+GraphicsConfigurationFactory.getFactory: com.jogamp.nativewindow.x11.X11GraphicsDevice, com.jogamp.nativewindow.CapabilitiesImmutable
+Factory #0: DeviceCapsType[com.jogamp.nativewindow.awt.AWTGraphicsDevice, com.jogamp.nativewindow.CapabilitiesImmutable] -> jogamp.nativewindow.x11.awt.X11AWTGraphicsConfigurationFactory@73f792cf
+Factory #1: DeviceCapsType[com.jogamp.nativewindow.x11.X11GraphicsDevice, com.jogamp.opengl.GLCapabilitiesImmutable] -> jogamp.opengl.x11.glx.X11GLXGraphicsConfigurationFactory@43814d18
+Factory #2: DeviceCapsType[com.jogamp.nativewindow.AbstractGraphicsDevice, com.jogamp.nativewindow.CapabilitiesImmutable] -> jogamp.nativewindow.DefaultGraphicsConfigurationFactoryImpl@2f7a2457
+Factory #3: DeviceCapsType[com.jogamp.nativewindow.x11.X11GraphicsDevice, com.jogamp.nativewindow.CapabilitiesImmutable] -> jogamp.nativewindow.x11.X11GraphicsConfigurationFactory@3498ed
+GraphicsConfigurationFactory.getFactory() deviceTypes: [class com.jogamp.nativewindow.x11.X11GraphicsDevice, class com.jogamp.nativewindow.DefaultGraphicsDevice, interface com.jogamp.nativewindow.AbstractGraphicsDevice]
+GraphicsConfigurationFactory.getFactory() capabilitiesTypes: [interface com.jogamp.nativewindow.CapabilitiesImmutable]
+GraphicsConfigurationFactory.getFactory() found DeviceCapsType[com.jogamp.nativewindow.x11.X11GraphicsDevice, com.jogamp.nativewindow.CapabilitiesImmutable] -> jogamp.nativewindow.x11.X11GraphicsConfigurationFactory@3498ed
+SharedResourceRunner.start() - start new Thread - main
+SharedResourceRunner.run(): STARTED - main-SharedResourceRunner
+SharedResourceRunner.run(): READY - main-SharedResourceRunner
+Info: EGLDrawableFactory: EGL ES2 - OK (includesES1 true, isANGLE: false, eglInitialize 0x7f97035854b0)
+Info: EGLDrawableFactory: EGL ES1 - OK (ES2 lib)
+Info: EGLDrawableFactory: EGL GLn - OK (eglTableReset true, eglInitialize 0x7f97035854b0)
+GraphicsConfigurationFactory.registerFactory() put DeviceCapsType[com.jogamp.nativewindow.x11.X11GraphicsDevice, com.jogamp.opengl.GLCapabilitiesImmutable] -> jogamp.opengl.egl.EGLGraphicsConfigurationFactory@7c29daf3, overridding: jogamp.opengl.x11.glx.X11GLXGraphicsConfigurationFactory@43814d18
+GraphicsConfigurationFactory.registerFactory() put DeviceCapsType[com.jogamp.nativewindow.egl.EGLGraphicsDevice, com.jogamp.opengl.GLCapabilitiesImmutable] -> jogamp.opengl.egl.EGLGraphicsConfigurationFactory@7c29daf3, overridding: null
+SharedResourceRunner.start() - start new Thread - main
+SharedResourceRunner.run(): STARTED - main-SharedResourceRunner
+SharedResourceRunner.run(): READY - main-SharedResourceRunner
+Info: GLProfile.init - Default device is desktop derived: X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x0, owner false, ResourceToolkitLock[obj 0x614ddd49, isOwner false, <1f554b06, 694e1548>[count 0, qsz 0, owner <NULL>]]]
+Info: GLProfile.initProfilesForDevice: EGLGraphicsDevice[type .egl, v0.0.0, connection decon, unitID 0, handle 0x0, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner false, <26aa12dd, 3fd7a715>[count 0, qsz 0, owner <NULL>]]] (com.jogamp.nativewindow.egl.EGLGraphicsDevice), isSet false, hasDesktopGLFactory true, hasEGLFactory true
+GLProfile.init map decon, desktopCtxUndef true, esCtxUndef true
+GLProfile.init map GLProfile[GL4bc/GL4bc.sw] on device decon
+GLProfile.init map defaultAny GLProfile[GL4bc/GL4bc.sw] on device decon
+GLProfile.init map GLProfile[GL3bc/GL3bc.sw] on device decon
+GLProfile.init map GLProfile[GL2/GL2.sw] on device decon
+GLProfile.init map GLProfile[GL4/GL4.sw] on device decon
+GLProfile.init map GLProfile[GL3/GL3.sw] on device decon
+GLProfile.init map GLProfile[GLES3/GLES3.sw] on device decon
+GLProfile.init map GLProfile[GL4ES3/GL4bc.sw] on device decon
+GLProfile.init map GLProfile[GL2GL3/GL2.sw] on device decon
+GLProfile.init map GLProfile[GLES2/GLES2.sw] on device decon
+GLProfile.init map GLProfile[GL2ES2/GL2.sw] on device decon
+GLProfile.init map GLProfile[GLES1/GLES1.sw] on device decon
+GLProfile.init map GLProfile[GL2ES1/GL2.sw] on device decon
+SharedResourceRunner.getOrCreateShared() EGLGraphicsDevice[type .egl, v0.0.0, connection decon, unitID 0, handle 0x0, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner false, <26aa12dd, 3fd7a715>[count 0, qsz 0, owner <NULL>]]]: trying - main
+    [2]: jogamp.opengl.SharedResourceRunner.getOrCreateShared(SharedResourceRunner.java:188)
+    [3]: jogamp.opengl.egl.EGLDrawableFactory.getOrCreateSharedResourceImpl(EGLDrawableFactory.java:871)
+    [4]: jogamp.opengl.egl.EGLDrawableFactory.getOrCreateSharedResourceImpl(EGLDrawableFactory.java:89)
+    [5]: jogamp.opengl.GLDrawableFactoryImpl.getOrCreateSharedResource(GLDrawableFactoryImpl.java:187)
+    [6]: jogamp.opengl.GLDrawableFactoryImpl.createSharedResourceImpl(GLDrawableFactoryImpl.java:216)
+    [7]: com.jogamp.opengl.GLDrawableFactory.createSharedResource(GLDrawableFactory.java:375)
+    [8]: com.jogamp.opengl.GLProfile.initProfilesForDeviceCritical(GLProfile.java:1933)
+    [9]: com.jogamp.opengl.GLProfile.initProfilesForDevice(GLProfile.java:1866)
+    [10]: com.jogamp.opengl.GLProfile.initProfilesForDefaultDevices(GLProfile.java:1834)
+    [11]: com.jogamp.opengl.GLProfile.access$000(GLProfile.java:79)
+    [12]: com.jogamp.opengl.GLProfile$1.run(GLProfile.java:229)
+    [13]: java.security.AccessController.doPrivileged(Native Method)
+    [14]: com.jogamp.opengl.GLProfile.initSingleton(GLProfile.java:215)
+    [15]: com.jogamp.opengl.GLProfile.getProfileMap(GLProfile.java:2272)
+    [16]: com.jogamp.opengl.GLProfile.get(GLProfile.java:987)
+    [17]: com.jogamp.opengl.GLProfile.getDefault(GLProfile.java:721)
+    [18]: com.jogamp.opengl.GLProfile.getDefault(GLProfile.java:732)
+    [19]: com.jme3.system.jogl.JoglNewtAbstractDisplay.initGLCanvas(JoglNewtAbstractDisplay.java:79)
+    [20]: com.jme3.system.jogl.JoglNewtDisplay.privateInit(JoglNewtDisplay.java:145)
+    [21]: com.jme3.system.jogl.JoglNewtDisplay.create(JoglNewtDisplay.java:168)
+    [22]: com.jme3.app.Application.start(Application.java:446)
+    [23]: com.jme3.app.Application.start(Application.java:407)
+    [24]: com.jme3.app.SimpleApplication.start(SimpleApplication.java:132)
+    [25]: sandbox.Main0.main(Main0.java:31)
+SharedResourceRunner.doAndWait() START init: EGLGraphicsDevice[type .egl, v0.0.0, connection decon, unitID 0, handle 0x0, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner false, <26aa12dd, 3fd7a715>[count 0, qsz 0, owner <NULL>]]], release: null - main
+SharedResourceRunner.doAndWait() set command: EGLGraphicsDevice[type .egl, v0.0.0, connection decon, unitID 0, handle 0x0, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner false, <26aa12dd, 3fd7a715>[count 0, qsz 0, owner <NULL>]]], release: null - main
+SharedResourceRunner.run(): WOKE UP for device connection init: EGLGraphicsDevice[type .egl, v0.0.0, connection decon, unitID 0, handle 0x0, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner false, <26aa12dd, 3fd7a715>[count 0, qsz 0, owner <NULL>]]], release: null - main-SharedResourceRunner
+SharedResourceRunner.run(): create Shared for: EGLGraphicsDevice[type .egl, v0.0.0, connection decon, unitID 0, handle 0x0, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner false, <26aa12dd, 3fd7a715>[count 0, qsz 0, owner <NULL>]]] - main-SharedResourceRunner
+EGLDrawableFactory.createShared(): device EGLGraphicsDevice[type .egl, v0.0.0, connection decon, unitID 0, handle 0x0, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 1, qsz 0, owner <main-SharedResourceRunner>]]]
+EGLDrawableFactory.mapAvailableEGLESConfig: GL3 ( 3 ), mapsADeviceToDefaultDevice true (QUERY_EGL_ES_NATIVE_TK false, initDefaultDevice true, hasDesktopFactory true, isEGLGraphicsDevice true)
+main-SharedResourceRunner - EGLGraphicsDevice.open(): EGLGraphicsDevice[type .egl, v0.0.0, connection decon, unitID 0, handle 0x0, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 1, qsz 0, owner <main-SharedResourceRunner>]]]
+EGLDisplayUtil.eglGetDisplay.X: eglDisplay(0x0): 0x1, OK, singletonEGLDisplay null (use false)
+EGLDisplayUtil.eglInitialize(0x1 ...): EGLDisplayRef[0x1: refCnt 1] = true, eglVersion 1.4, singletonEGLDisplay EGLDisplayRef[0x1: refCnt 1] (use false)
+EGLFeatures on device EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 1, qsz 0, owner <main-SharedResourceRunner>]]], vendor NVIDIA
+  Client APIs: OpenGL_ES OpenGL; has EGL 1.4 true -> has OpenGL false
+EGL PlatformExtensions: Device EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]
+EGL PlatformExtensions: EGL vendor NVIDIA, version [client null, server 1.4], clientAPIs OpenGL_ES OpenGL
+EGL extensions (Server): EGL_EXT_buffer_age EGL_EXT_create_context_robustness EGL_EXT_output_base EGL_IMG_context_priority EGL_KHR_config_attribs EGL_KHR_create_context EGL_KHR_fence_sync EGL_KHR_get_all_proc_addresses EGL_KHR_partial_update EGL_KHR_swap_buffers_with_damage EGL_KHR_gl_renderbuffer_image EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_image EGL_KHR_image_base EGL_KHR_image_pixmap EGL_KHR_reusable_sync EGL_KHR_stream EGL_KHR_stream_consumer_gltexture EGL_KHR_stream_cross_process_fd EGL_KHR_stream_fifo EGL_KHR_stream_producer_eglsurface EGL_KHR_surfaceless_context EGL_NV_post_sub_buffer EGL_NV_stream_metadata EGL_NV_stream_remote EGL_NV_stream_socket EGL_NV_stream_socket_unix EGL_NV_stream_sync EGL_NV_stream_consumer_gltexture_yuv EGL_NV_sync EGL_NV_system_time
+  Extensions: EGL_EXT_buffer_age EGL_EXT_create_context_robustness EGL_EXT_output_base EGL_IMG_context_priority EGL_KHR_config_attribs EGL_KHR_create_context EGL_KHR_fence_sync EGL_KHR_get_all_proc_addresses EGL_KHR_partial_update EGL_KHR_swap_buffers_with_damage EGL_KHR_gl_renderbuffer_image EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_image EGL_KHR_image_base EGL_KHR_image_pixmap EGL_KHR_reusable_sync EGL_KHR_stream EGL_KHR_stream_consumer_gltexture EGL_KHR_stream_cross_process_fd EGL_KHR_stream_fifo EGL_KHR_stream_producer_eglsurface EGL_KHR_surfaceless_context EGL_NV_post_sub_buffer EGL_NV_stream_metadata EGL_NV_stream_remote EGL_NV_stream_socket EGL_NV_stream_socket_unix EGL_NV_stream_sync EGL_NV_stream_consumer_gltexture_yuv EGL_NV_sync EGL_NV_system_time 
+  KHR_create_context: true
+  KHR_surfaceless_context: true
+EGLDrawableFactory.mapAvailableEGLESConfig.0: EGLFeatures[vendor NVIDIA, version 1.4.0, has[GL-API false, KHR[CreateContext true, Surfaceless true]]]
+EGLDrawableFactory.mapAvailableEGLESConfig() OpenGL API not supported (1)
+main-SharedResourceRunner: createContextARB: SET mappedVersionsAvailableSet .egl_decon_0
+
+EGLDrawableFactory.mapAvailableEGLESConfig: GLES1 ( 1 ), mapsADeviceToDefaultDevice true (QUERY_EGL_ES_NATIVE_TK false, initDefaultDevice false, hasDesktopFactory true, isEGLGraphicsDevice true)
+EGLDrawableFactory.mapAvailableEGLESConfig.0: EGLFeatures[vendor NVIDIA, version 1.4.0, has[GL-API false, KHR[CreateContext true, Surfaceless true]]]
+EGLGraphicsConfiguration.eglChooseConfig: eglChooseConfig eglDisplay 0x1, nativeVisualID 0x0, capsChosen GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer]], winbits PBUFFER, fboAvail false, device EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 1, qsz 0, owner <main-SharedResourceRunner>]]], .egl_decon_0, numEGLConfigs 118
+EGLGraphicsConfiguration.eglChooseConfig: #1 eglChooseConfig: recommended fbcfg 0xcaf365, idx 0
+EGLGraphicsConfiguration.eglChooseConfig: #1 useRecommendedIndex true, skipCapsChooser true
+EGLGraphicsConfiguration.eglChooseConfig: #1 fbcfg caps GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+EGLGraphicsConfiguration.eglChooseConfig: got configs: 1
+0: GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+EGLGraphicsConfiguration.eglChooseConfig: X chosen :0, eglConfig: 0xcaf365: EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 1, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+EGLSurface.ctor().2: EGLSurface[ displayHandle 0x1
+, surfaceHandle 0x0
+, size 64x64
+, UOB[ ]
+, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 1, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+, surfaceLock <edac637, 16827ee1>[count 0, qsz 0, owner <NULL>]
+, EGLUpstreamSurfaceHook[ 64x64, jogamp.nativewindow.WrappedSurface: 0x0]
+, upstreamSurface true ]
+Surface Hierarchy of jogamp.opengl.egl.EGLSurface
+  Surface device EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 1, qsz 0, owner <main-SharedResourceRunner>]]]
+  Surface size 64x64, handle 0x0
+  Upstream options UOB[ ]
+Pbuffer config: EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+  Upstream Hook jogamp.opengl.egl.EGLUpstreamSurfaceHook
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+    Upstream Hook's Surface jogamp.nativewindow.WrappedSurface
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer]],
+      Surface device EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 1, qsz 0, owner <main-SharedResourceRunner>]]]
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]      Surface size 64x64, handle 0x0
+
+      Upstream options UOB[ ]
+      Upstream Hook jogamp.opengl.egl.EGLDummyUpstreamSurfaceHook
+        Upstream Hook's Surface NULL
+
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): EGLUpstreamSurfaceHook[ 64x64, jogamp.nativewindow.WrappedSurface: 0x0]
+PBuffer setSurface result: eglSurface 0x7f96f4074971
+ProxySurfaceImpl: surface change 0x0 -> 0x7f96f4074971
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): SurfaceDevice: EGLGraphicsDevice, hash 0x10a31100, EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): SurfaceConfig: EGLGraphicsConfiguration, hash 0x75e93274, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): UpstreamDevice: EGLGraphicsDevice, hash 0x10a31100, EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): UpstreamConfig: EGLGraphicsConfiguration, hash 0x75e93274, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): Reusing this eglDevice: EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], using this config EGLGraphicsConfiguration EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): Reusing eglConfig: EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): Fin: Already valid EGL surface - use as-is: WrappedSurface[ displayHandle 0x1
+, surfaceHandle 0x7f96f4074971
+, size 64x64
+, UOB[ OWNS_SURFACE | WINDOW_INVISIBLE ]
+, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+, surfaceLock <2ddab980, 28aabfac>[count 1, qsz 0, owner <main-SharedResourceRunner>]
+, EGLDummyUpstreamSurfaceHook[pixel 64x64]
+, upstreamSurface false ]
+main-SharedResourceRunner: setRealized: drawable EGLDrawable, surface EGLSurface, isProxySurface true: false -> true
+    [2]: jogamp.opengl.GLDrawableImpl.setRealized(GLDrawableImpl.java:184)
+    [3]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.mapAvailableEGLESConfig(EGLDrawableFactory.java:725)
+    [4]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.createEGLSharedResourceImpl(EGLDrawableFactory.java:552)
+    [5]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.createSharedResource(EGLDrawableFactory.java:513)
+    [6]: jogamp.opengl.SharedResourceRunner.run(SharedResourceRunner.java:297)
+    [7]: java.lang.Thread.run(Thread.java:745)
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): EGLUpstreamSurfaceHook[ 64x64, jogamp.nativewindow.WrappedSurface: 0x7f96f4074971]
+ProxySurfaceImpl: surface change 0x0 -> 0x7f96f4074971
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): SurfaceDevice: EGLGraphicsDevice, hash 0x10a31100, EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): SurfaceConfig: EGLGraphicsConfiguration, hash 0x75e93274, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): UpstreamDevice: EGLGraphicsDevice, hash 0x10a31100, EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): UpstreamConfig: EGLGraphicsConfiguration, hash 0x75e93274, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): Reusing this eglDevice: EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], using this config EGLGraphicsConfiguration EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): Reusing eglConfig: EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): Fin: Already valid EGL surface - use as-is: WrappedSurface[ displayHandle 0x1
+, surfaceHandle 0x7f96f4074971
+, size 64x64
+, UOB[ OWNS_SURFACE | WINDOW_INVISIBLE ]
+, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+, surfaceLock <2ddab980, 28aabfac>[count 1, qsz 0, owner <main-SharedResourceRunner>]
+, EGLDummyUpstreamSurfaceHook[pixel 64x64]
+, upstreamSurface false ]
+ProxySurfaceImpl: surface change 0x0 -> 0x7f96f4074971
+main-SharedResourceRunner: EGLDrawable.setRealized(true): NOP - EGLSurface[ displayHandle 0x1
+, surfaceHandle 0x7f96f4074971
+, size 64x64
+, UOB[ ]
+, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+, surfaceLock <edac637, 16827ee1>[count 1, qsz 0, owner <main-SharedResourceRunner>]
+, EGLUpstreamSurfaceHook[ 64x64, jogamp.nativewindow.WrappedSurface: 0x7f96f4074971]
+, upstreamSurface true ]
+main-SharedResourceRunner: createHandle of EGLSurface[ displayHandle 0x1
+, surfaceHandle 0x7f96f4074971
+, size 64x64
+, UOB[ ]
+, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+, surfaceLock <edac637, 16827ee1>[count 1, qsz 0, owner <main-SharedResourceRunner>]
+, EGLUpstreamSurfaceHook[ 64x64, jogamp.nativewindow.WrappedSurface: 0x7f96f4074971]
+, upstreamSurface true ]
+Surface Hierarchy of jogamp.opengl.egl.EGLSurface
+  Surface device EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]
+  Surface size 64x64, handle 0x7f96f4074971
+  Upstream options UOB[ ]
+  Upstream Hook jogamp.opengl.egl.EGLUpstreamSurfaceHook
+    Upstream Hook's Surface jogamp.nativewindow.WrappedSurface
+      Surface device EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]
+      Surface size 64x64, handle 0x7f96f4074971
+      Upstream options UOB[ OWNS_SURFACE | WINDOW_INVISIBLE ]
+      Upstream Hook jogamp.opengl.egl.EGLDummyUpstreamSurfaceHook
+        Upstream Hook's Surface NULL
+
+main-SharedResourceRunner: GLContext.resetStates(isInit true)
+main-SharedResourceRunner: EGLContext.createImpl: START GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]], share 0x0
+main-SharedResourceRunner: Use ARB[avail[disabled false, quirk false] -> true]]
+main-SharedResourceRunner: createContextARB: mappedVersionsAvailableSet(decon): true
+main-SharedResourceRunner: createContextARB: Requested GLProfile[GLES1/GLES1.sw] -> 1.0 (ES profile, compat[], hardware)
+main-SharedResourceRunner: createImpl: NOT OK (ARB) - creation failed on eglDevice EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], eglConfig EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]], GLProfile[GLES1/GLES1.sw], shareWith 0x0, error 0x3000
+main-SharedResourceRunner: EGLContext.createContextARBImpl: Start 1.0 (ES profile, compat[], hardware) - @creation, hasOpenGLAPISupport false, useKHRCreateContext true, allowOpenGLAPI false, device EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]
+main-SharedResourceRunner: EGLContext.createContextARBImpl: attrs.1: major 1, flags 0x0, index 2
+main-SharedResourceRunner: EGLContext.createContextARBImpl: OK 1.0 (ES profile, compat[], hardware) - @creation, share 0, direct true
+main-SharedResourceRunner: GLContext.setGLFuncAvail: Given EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]] - 1.0 (ES profile, compat[], hardware) - OpenGL ES 1.1 NVIDIA 355.11, Number(Str) 1.1.0
+main-SharedResourceRunner: GLContext.setGLFuncAvail: Pre version verification - expected 1.0 (ES profile, compat[], hardware), strictMatch false, glVersionsMapping false
+main-SharedResourceRunner: GLContext.setGLFuncAvail: Version verification (Int): String OpenGL ES 1.1 NVIDIA 355.11, Number(Int) 0.0.0
+main-SharedResourceRunner: GLContext.setGLFuncAvail: Version verification (String): String OpenGL ES 1.1 NVIDIA 355.11, Number(Str) 1.1.0
+main-SharedResourceRunner: GLContext.setGLFuncAvail: Post version verification req 1.0 (ES profile, compat[], hardware) -> has 1.1 (ES profile, compat[], hardware), strictMatch false, versionValidated true, versionGL3IntOK false
+Quirks local.0: []
+Quirks local.X: []
+Quirks sticky on EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]: []
+main-SharedResourceRunner: GLContext.setGLFuncAvail.0 validated FQN: .egl_decon_0-0x1010008 - 1.1 (ES profile, compat[], hardware) - OpenGL ES 1.1 NVIDIA 355.11
+main-SharedResourceRunner: Initializing EGLextension address table: EGL-.egl_decon_0
+main-SharedResourceRunner: GLContext EGL ProcAddressTable mapping key(EGL-.egl_decon_0) -> 0x28aef09
+main-SharedResourceRunner: GLContext GL ProcAddressTable mapping key(.egl_decon_0-0x1010008) -> 0x5bfb798c
+Info: setGL (OpenGL null): main-SharedResourceRunner, <null> -> GLES1Impl, jogamp.opengl.es1.GLES1Impl@314085a5
+    [2]: jogamp.opengl.GLContextImpl.setGL(GLContextImpl.java:347)
+    [3]: jogamp.opengl.GLContextImpl.setGLFunctionAvailability(GLContextImpl.java:1731)
+    [4]: jogamp.opengl.egl.EGLContext.createImpl(EGLContext.java:348)
+    [5]: jogamp.opengl.GLContextImpl.makeCurrentWithinLock(GLContextImpl.java:759)
+    [6]: jogamp.opengl.GLContextImpl.makeCurrent(GLContextImpl.java:642)
+    [7]: jogamp.opengl.GLContextImpl.makeCurrent(GLContextImpl.java:580)
+    [8]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.mapAvailableEGLESConfig(EGLDrawableFactory.java:732)
+    [9]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.createEGLSharedResourceImpl(EGLDrawableFactory.java:552)
+    [10]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.createSharedResource(EGLDrawableFactory.java:513)
+    [11]: jogamp.opengl.SharedResourceRunner.run(SharedResourceRunner.java:297)
+    [12]: java.lang.Thread.run(Thread.java:745)
+main-SharedResourceRunner:ExtensionAvailabilityCache: Pre-caching init jogamp.opengl.es1.GLES1Impl@314085a5, OpenGL 1.1 (ES profile, compat[], hardware) - OpenGL ES 1.1 NVIDIA 355.11
+main-SharedResourceRunner:ExtensionAvailabilityCache: Pre-caching extension availability OpenGL 1.1 (ES profile, compat[], hardware) - OpenGL ES 1.1 NVIDIA 355.11, use glGetString
+main-SharedResourceRunner:ExtensionAvailabilityCache: GL_EXTENSIONS: 29, used glGetString
+EGL PlatformExtensions: Device EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 3, qsz 0, owner <main-SharedResourceRunner>]]]
+EGL PlatformExtensions: EGL vendor NVIDIA, version [client null, server 1.4], clientAPIs OpenGL_ES OpenGL
+EGL extensions (Server): EGL_EXT_buffer_age EGL_EXT_create_context_robustness EGL_EXT_output_base EGL_IMG_context_priority EGL_KHR_config_attribs EGL_KHR_create_context EGL_KHR_fence_sync EGL_KHR_get_all_proc_addresses EGL_KHR_partial_update EGL_KHR_swap_buffers_with_damage EGL_KHR_gl_renderbuffer_image EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_image EGL_KHR_image_base EGL_KHR_image_pixmap EGL_KHR_reusable_sync EGL_KHR_stream EGL_KHR_stream_consumer_gltexture EGL_KHR_stream_cross_process_fd EGL_KHR_stream_fifo EGL_KHR_stream_producer_eglsurface EGL_KHR_surfaceless_context EGL_NV_post_sub_buffer EGL_NV_stream_metadata EGL_NV_stream_remote EGL_NV_stream_socket EGL_NV_stream_socket_unix EGL_NV_stream_sync EGL_NV_stream_consumer_gltexture_yuv EGL_NV_sync EGL_NV_system_time
+main-SharedResourceRunner:ExtensionAvailabilityCache: GLX_EXTENSIONS: 32
+main-SharedResourceRunner:ExtensionAvailabilityCache: GL vendor: NVIDIA Corporation
+main-SharedResourceRunner:ExtensionAvailabilityCache: ALL EXTENSIONS: 61
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_ES_VERSION_1_1 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_ES_VERSION_1_0 to known extensions
+main-SharedResourceRunner: GLContext GL ExtensionAvailabilityCache mapping key(.egl_decon_0-0x1010008) -> 0x51fab59b - entries: 64
+main-SharedResourceRunner: GLContext.setGLFuncAvail.X: OK .egl_decon_0-0x1010008 - 1.1 (ES profile, compat[FP32], hardware) - glErr 0x500
+main-SharedResourceRunner: createImpl: Created OpenGL context 0x7f96f4076fd1,
+	write surface 0x7f96f4074971,
+	read  surface 0x7f96f4074971,
+	EGLContext [Version 1.1 (ES profile, compat[FP32], hardware) - OpenGL ES 1.1 NVIDIA 355.11 [GL 1.1.0, vendor 355.11.0 (NVIDIA 355.11)], options 0x4008, this 0x2d8b310c, handle 0x7f96f4076fd1, isShared false, jogamp.opengl.es1.GLES1Impl@314085a5,
+	 quirks: [],
+	Drawable: jogamp.opengl.egl.EGLDrawable[realized true,
+	factory    jogamp.opengl.egl.EGLDrawableFactory@1aa05cb8,
+	surface    EGLSurface[ displayHandle 0x1
+, surfaceHandle 0x7f96f4074971
+, size 64x64
+, UOB[ ]
+, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+, surfaceLock <edac637, 16827ee1>[count 1, qsz 0, owner <main-SharedResourceRunner>]
+, EGLUpstreamSurfaceHook[ 64x64, jogamp.nativewindow.WrappedSurface: 0x7f96f4074971]
+, upstreamSurface true ],
+	eglSurface 0x7f96f4074971,
+	eglConfig  EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]],
+	requested  GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer]],
+	chosen     GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]] ,
+	sharing with 0x0
+main-SharedResourceRunner: Create GL context OK: For jogamp.opengl.egl.EGLContext - 1.1 (ES profile, compat[FP32], hardware) - OpenGL ES 1.1 NVIDIA 355.11 - obj 0x2d8b310c, ctx 0x7f96f4076fd1, isShared false, surf true 0x7f96f4074971, <6d888f4f, 5b6f449e>[count 1, qsz 0, owner <main-SharedResourceRunner>]
+GLDebugMessageHandler.init(false)
+GLDebugMessageHandler: GL DEBUG not set in ARB ctx options: 1.1 (ES profile, compat[FP32], hardware) - OpenGL ES 1.1 NVIDIA 355.11
+GLDebugMessageHandler.init(false) .. n/a
+GLContext.mapAvailableGLVersion: EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]: 1.0 (ES profile, compat[], hardware) -> 1.1 (ES profile, compat[FP32], hardware)
+main-SharedResourceRunner - EGLGraphicsDevice.open(): EGLGraphicsDevice[type .egl, v0.0.0, connection decon, unitID 0, handle 0x0, owner true, ResourceToolkitLock[obj 0x56347d87, isOwner false, <4e69be65, 6732a210>[count 0, qsz 0, owner <NULL>]]]
+EGLDisplayUtil.eglGetDisplay.X: eglDisplay(0x0): 0x1, OK, singletonEGLDisplay EGLDisplayRef[0x1: refCnt 1] (use false)
+EGLDisplayUtil.eglInitialize(0x1 ...): EGLDisplayRef[0x1: refCnt 2] = true, eglVersion 1.4, singletonEGLDisplay EGLDisplayRef[0x1: refCnt 2] (use false)
+EGLGraphicsConfiguration.eglChooseConfig: eglChooseConfig eglDisplay 0x1, nativeVisualID 0x0, capsChosen GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], on-scr[.]], winbits WINDOW, fboAvail false, device EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x56347d87, isOwner false, <4e69be65, 6732a210>[count 0, qsz 0, owner <NULL>]]], .egl_decon_0, numEGLConfigs 118
+EGLGraphicsConfiguration.eglChooseConfig: #1 eglChooseConfig: recommended fbcfg 0xcaf365, idx 0
+EGLGraphicsConfiguration.eglChooseConfig: #1 useRecommendedIndex true, skipCapsChooser true
+EGLGraphicsConfiguration.eglChooseConfig: #1 fbcfg caps GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], on-scr[.], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+EGLGraphicsConfiguration.eglChooseConfig: got configs: 1
+0: GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], on-scr[.], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+EGLGraphicsConfiguration.eglChooseConfig: X chosen :0, eglConfig: 0xcaf365: EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x56347d87, isOwner false, <4e69be65, 6732a210>[count 0, qsz 0, owner <NULL>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], on-scr[.], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+EGLSurface.ctor().3: EGLSurface[ displayHandle 0x1
+, surfaceHandle 0x0
+, size 64x64
+, UOB[ OWNS_DEVICE ]
+, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x56347d87, isOwner false, <4e69be65, 6732a210>[count 0, qsz 0, owner <NULL>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], on-scr[.], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+, surfaceLock <30ecce58, 423cd877>[count 0, qsz 0, owner <NULL>]
+, GenericUpstreamSurfacelessHook[pixel 64x64]
+, upstreamSurface false ]
+Surface Hierarchy of jogamp.opengl.egl.EGLSurface
+  Surface device EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x56347d87, isOwner false, <4e69be65, 6732a210>[count 0, qsz 0, owner <NULL>]]]
+  Surface size 64x64, handle 0x0
+  Upstream options UOB[ OWNS_DEVICE ]
+  Upstream Hook com.jogamp.nativewindow.GenericUpstreamSurfacelessHook
+    Upstream Hook's Surface NULL
+
+main-SharedResourceRunner: setRealized: drawable EGLDrawable, surface EGLSurface, isProxySurface true: false -> true
+    [2]: jogamp.opengl.GLDrawableImpl.setRealized(GLDrawableImpl.java:184)
+    [3]: jogamp.opengl.GLDrawableFactoryImpl.probeSurfacelessCtx(GLDrawableFactoryImpl.java:123)
+    [4]: jogamp.opengl.egl.EGLDrawableFactory.access$1000(EGLDrawableFactory.java:89)
+    [5]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.mapAvailableEGLESConfig(EGLDrawableFactory.java:745)
+    [6]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.createEGLSharedResourceImpl(EGLDrawableFactory.java:552)
+    [7]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.createSharedResource(EGLDrawableFactory.java:513)
+    [8]: jogamp.opengl.SharedResourceRunner.run(SharedResourceRunner.java:297)
+    [9]: java.lang.Thread.run(Thread.java:745)
+main-SharedResourceRunner: EGLDrawable.setRealized(true): NOP - EGLSurface[ displayHandle 0x1
+, surfaceHandle 0x0
+, size 64x64
+, UOB[ OWNS_SURFACE | OWNS_DEVICE | WINDOW_INVISIBLE | SURFACELESS ]
+, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x56347d87, isOwner true, <4e69be65, 6732a210>[count 1, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], on-scr[.], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+, surfaceLock <30ecce58, 423cd877>[count 1, qsz 0, owner <main-SharedResourceRunner>]
+, GenericUpstreamSurfacelessHook[pixel 64x64]
+, upstreamSurface false ]
+main-SharedResourceRunner: createHandle of EGLSurface[ displayHandle 0x1
+, surfaceHandle 0x0
+, size 64x64
+, UOB[ OWNS_SURFACE | OWNS_DEVICE | WINDOW_INVISIBLE | SURFACELESS ]
+, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x56347d87, isOwner true, <4e69be65, 6732a210>[count 1, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], on-scr[.], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+, surfaceLock <30ecce58, 423cd877>[count 1, qsz 0, owner <main-SharedResourceRunner>]
+, GenericUpstreamSurfacelessHook[pixel 64x64]
+, upstreamSurface false ]
+Surface Hierarchy of jogamp.opengl.egl.EGLSurface
+  Surface device EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x56347d87, isOwner true, <4e69be65, 6732a210>[count 1, qsz 0, owner <main-SharedResourceRunner>]]]
+  Surface size 64x64, handle 0x0
+  Upstream options UOB[ OWNS_SURFACE | OWNS_DEVICE | WINDOW_INVISIBLE | SURFACELESS ]
+  Upstream Hook com.jogamp.nativewindow.GenericUpstreamSurfacelessHook
+    Upstream Hook's Surface NULL
+
+main-SharedResourceRunner: GLContext.makeCurrent: Surfaceless evaluate
+main-SharedResourceRunner: GLContext.makeCurrent: Surfaceless OK - validated
+main-SharedResourceRunner: GLContextImpl.destroy.0: obj 0x2d8b310c, ctx 0x7f96f4076fd1, isShared false, surf true 0x0, <6d888f4f, 5b6f449e>[count 1, qsz 0, owner <main-SharedResourceRunner>]
+main-SharedResourceRunner: GLContext.resetStates(isInit false)
+main-SharedResourceRunner: GLContextImpl.destroy.X: obj 0x2d8b310c, ctx 0x0, isShared false, surf true 0x0, <6d888f4f, 5b6f449e>[count 0, qsz 0, owner <NULL>]
+main-SharedResourceRunner: setRealized: drawable EGLDrawable, surface EGLSurface, isProxySurface true: true -> false
+    [2]: jogamp.opengl.GLDrawableImpl.setRealized(GLDrawableImpl.java:184)
+    [3]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.mapAvailableEGLESConfig(EGLDrawableFactory.java:780)
+    [4]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.createEGLSharedResourceImpl(EGLDrawableFactory.java:552)
+    [5]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.createSharedResource(EGLDrawableFactory.java:513)
+    [6]: jogamp.opengl.SharedResourceRunner.run(SharedResourceRunner.java:297)
+    [7]: java.lang.Thread.run(Thread.java:745)
+main-SharedResourceRunner: destroyHandle of EGLSurface[ displayHandle 0x1
+, surfaceHandle 0x0
+, size 64x64
+, UOB[ OWNS_SURFACE | OWNS_DEVICE | WINDOW_INVISIBLE | SURFACELESS ]
+, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x56347d87, isOwner true, <4e69be65, 6732a210>[count 1, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], on-scr[.], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+, surfaceLock <30ecce58, 423cd877>[count 0, qsz 0, owner <NULL>]
+, GenericUpstreamSurfacelessHook[pixel 64x64]
+, upstreamSurface false ]
+main-SharedResourceRunner: EGLDrawable.setRealized(false): NOP - EGLSurface[ displayHandle 0x1
+, surfaceHandle 0x0
+, size 64x64
+, UOB[ OWNS_SURFACE | OWNS_DEVICE | WINDOW_INVISIBLE | SURFACELESS ]
+, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x56347d87, isOwner true, <4e69be65, 6732a210>[count 1, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], on-scr[.], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+, surfaceLock <30ecce58, 423cd877>[count 0, qsz 0, owner <NULL>]
+, GenericUpstreamSurfacelessHook[pixel 64x64]
+, upstreamSurface false ]
+main-SharedResourceRunner - EGLGraphicsDevice.close(): EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x56347d87, isOwner false, <4e69be65, 6732a210>[count 0, qsz 0, owner <NULL>]]]
+EGLDisplayUtil.eglTerminate.X(0x1 ...): EGLDisplayRef[0x1: refCnt 1] = true, singletonEGLDisplay EGLDisplayRef[0x1: refCnt 1] (use false)
+main-SharedResourceRunner: setRealized: drawable EGLDrawable, surface EGLSurface, isProxySurface true: true -> false
+    [2]: jogamp.opengl.GLDrawableImpl.setRealized(GLDrawableImpl.java:184)
+    [3]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.mapAvailableEGLESConfig(EGLDrawableFactory.java:783)
+    [4]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.createEGLSharedResourceImpl(EGLDrawableFactory.java:552)
+    [5]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.createSharedResource(EGLDrawableFactory.java:513)
+    [6]: jogamp.opengl.SharedResourceRunner.run(SharedResourceRunner.java:297)
+    [7]: java.lang.Thread.run(Thread.java:745)
+main-SharedResourceRunner: destroyHandle of EGLSurface[ displayHandle 0x1
+, surfaceHandle 0x7f96f4074971
+, size 64x64
+, UOB[ ]
+, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+, surfaceLock <edac637, 16827ee1>[count 0, qsz 0, owner <NULL>]
+, EGLUpstreamSurfaceHook[ 64x64, jogamp.nativewindow.WrappedSurface: 0x7f96f4074971]
+, upstreamSurface true ]
+main-SharedResourceRunner: EGLDrawable.setRealized(false): NOP - EGLSurface[ displayHandle 0x1
+, surfaceHandle 0x7f96f4074971
+, size 64x64
+, UOB[ ]
+, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES1/GLES1.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+, surfaceLock <edac637, 16827ee1>[count 0, qsz 0, owner <NULL>]
+, EGLUpstreamSurfaceHook[ 64x64, jogamp.nativewindow.WrappedSurface: 0x7f96f4074971]
+, upstreamSurface true ]
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.destroy(EGLSurface): EGLUpstreamSurfaceHook[ 64x64, jogamp.nativewindow.WrappedSurface: 0x7f96f4074971]
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.destroy(EGLSurface): EGLUpstreamSurfaceHook[ 64x64, jogamp.nativewindow.WrappedSurface: 0x0]
+EGLDrawableFactory.mapAvailableEGLESConfig: GLES3 ( 3 ), mapsADeviceToDefaultDevice true (QUERY_EGL_ES_NATIVE_TK false, initDefaultDevice false, hasDesktopFactory true, isEGLGraphicsDevice true)
+EGLDrawableFactory.mapAvailableEGLESConfig.0: EGLFeatures[vendor NVIDIA, version 1.4.0, has[GL-API false, KHR[CreateContext true, Surfaceless true]]]
+EGLGraphicsConfiguration.eglChooseConfig: eglChooseConfig eglDisplay 0x1, nativeVisualID 0x0, capsChosen GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer]], winbits PBUFFER, fboAvail false, device EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 1, qsz 0, owner <main-SharedResourceRunner>]]], .egl_decon_0, numEGLConfigs 118
+EGLGraphicsConfiguration.eglChooseConfig: #1 eglChooseConfig: recommended fbcfg 0xcaf365, idx 0
+EGLGraphicsConfiguration.eglChooseConfig: #1 useRecommendedIndex true, skipCapsChooser true
+EGLGraphicsConfiguration.eglChooseConfig: #1 fbcfg caps GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+EGLGraphicsConfiguration.eglChooseConfig: got configs: 1
+0: GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+EGLGraphicsConfiguration.eglChooseConfig: X chosen :0, eglConfig: 0xcaf365: EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 1, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+EGLSurface.ctor().2: EGLSurface[ displayHandle 0x1
+, surfaceHandle 0x0
+, size 64x64
+, UOB[ ]
+, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 1, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+, surfaceLock <466eb75d, 5b201029>[count 0, qsz 0, owner <NULL>]
+, EGLUpstreamSurfaceHook[ 64x64, jogamp.nativewindow.WrappedSurface: 0x0]
+, upstreamSurface true ]
+Surface Hierarchy of jogamp.opengl.egl.EGLSurface
+  Surface device EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 1, qsz 0, owner <main-SharedResourceRunner>]]]
+  Surface size 64x64, handle 0x0
+  Upstream options UOB[ ]
+  Upstream Hook jogamp.opengl.egl.EGLUpstreamSurfaceHook
+    Upstream Hook's Surface jogamp.nativewindow.WrappedSurface
+      Surface device EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 1, qsz 0, owner <main-SharedResourceRunner>]]]
+      Surface size 64x64, handle 0x0
+      Upstream options UOB[ ]
+      Upstream Hook jogamp.opengl.egl.EGLDummyUpstreamSurfaceHook
+        Upstream Hook's Surface NULL
+
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): EGLUpstreamSurfaceHook[ 64x64, jogamp.nativewindow.WrappedSurface: 0x0]
+Pbuffer config: EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+PBuffer setSurface result: eglSurface 0x7f96f4347a41
+ProxySurfaceImpl: surface change 0x0 -> 0x7f96f4347a41
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): SurfaceDevice: EGLGraphicsDevice, hash 0x10a31100, EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): SurfaceConfig: EGLGraphicsConfiguration, hash 0xd688b1b, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): UpstreamDevice: EGLGraphicsDevice, hash 0x10a31100, EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): UpstreamConfig: EGLGraphicsConfiguration, hash 0xd688b1b, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): Reusing this eglDevice: EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], using this config EGLGraphicsConfiguration EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): Reusing eglConfig: EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): Fin: Already valid EGL surface - use as-is: WrappedSurface[ displayHandle 0x1
+, surfaceHandle 0x7f96f4347a41
+, size 64x64
+, UOB[ OWNS_SURFACE | WINDOW_INVISIBLE ]
+, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+, surfaceLock <293305a1, 1a548b85>[count 1, qsz 0, owner <main-SharedResourceRunner>]
+, EGLDummyUpstreamSurfaceHook[pixel 64x64]
+, upstreamSurface false ]
+main-SharedResourceRunner: setRealized: drawable EGLDrawable, surface EGLSurface, isProxySurface true: false -> true
+    [2]: jogamp.opengl.GLDrawableImpl.setRealized(GLDrawableImpl.java:184)
+    [3]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.mapAvailableEGLESConfig(EGLDrawableFactory.java:725)
+    [4]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.createEGLSharedResourceImpl(EGLDrawableFactory.java:561)
+    [5]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.createSharedResource(EGLDrawableFactory.java:513)
+    [6]: jogamp.opengl.SharedResourceRunner.run(SharedResourceRunner.java:297)
+    [7]: java.lang.Thread.run(Thread.java:745)
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): EGLUpstreamSurfaceHook[ 64x64, jogamp.nativewindow.WrappedSurface: 0x7f96f4347a41]
+ProxySurfaceImpl: surface change 0x0 -> 0x7f96f4347a41
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): SurfaceDevice: EGLGraphicsDevice, hash 0x10a31100, EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): SurfaceConfig: EGLGraphicsConfiguration, hash 0xd688b1b, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): UpstreamDevice: EGLGraphicsDevice, hash 0x10a31100, EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): UpstreamConfig: EGLGraphicsConfiguration, hash 0xd688b1b, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): Reusing this eglDevice: EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], using this config EGLGraphicsConfiguration EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): Reusing eglConfig: EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.create( up WrappedSurface -> this EGLSurface ): Fin: Already valid EGL surface - use as-is: WrappedSurface[ displayHandle 0x1
+, surfaceHandle 0x7f96f4347a41
+, size 64x64
+, UOB[ OWNS_SURFACE | WINDOW_INVISIBLE ]
+, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+, surfaceLock <293305a1, 1a548b85>[count 1, qsz 0, owner <main-SharedResourceRunner>]
+, EGLDummyUpstreamSurfaceHook[pixel 64x64]
+, upstreamSurface false ]
+ProxySurfaceImpl: surface change 0x0 -> 0x7f96f4347a41
+main-SharedResourceRunner: EGLDrawable.setRealized(true): NOP - EGLSurface[ displayHandle 0x1
+, surfaceHandle 0x7f96f4347a41
+, size 64x64
+, UOB[ ]
+, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+, surfaceLock <466eb75d, 5b201029>[count 1, qsz 0, owner <main-SharedResourceRunner>]
+, EGLUpstreamSurfaceHook[ 64x64, jogamp.nativewindow.WrappedSurface: 0x7f96f4347a41]
+, upstreamSurface true ]
+main-SharedResourceRunner: createHandle of EGLSurface[ displayHandle 0x1
+, surfaceHandle 0x7f96f4347a41
+, size 64x64
+, UOB[ ]
+, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+, surfaceLock <466eb75d, 5b201029>[count 1, qsz 0, owner <main-SharedResourceRunner>]
+, EGLUpstreamSurfaceHook[ 64x64, jogamp.nativewindow.WrappedSurface: 0x7f96f4347a41]
+, upstreamSurface true ]
+Surface Hierarchy of jogamp.opengl.egl.EGLSurface
+  Surface device EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]
+  Surface size 64x64, handle 0x7f96f4347a41
+  Upstream options UOB[ ]
+  Upstream Hook jogamp.opengl.egl.EGLUpstreamSurfaceHook
+    Upstream Hook's Surface jogamp.nativewindow.WrappedSurface
+      Surface device EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]
+      Surface size 64x64, handle 0x7f96f4347a41
+      Upstream options UOB[ OWNS_SURFACE | WINDOW_INVISIBLE ]
+      Upstream Hook jogamp.opengl.egl.EGLDummyUpstreamSurfaceHook
+        Upstream Hook's Surface NULL
+
+main-SharedResourceRunner: GLContext.resetStates(isInit true)
+main-SharedResourceRunner: EGLContext.createImpl: START GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]], share 0x0
+main-SharedResourceRunner: Use ARB[avail[disabled false, quirk false] -> true]]
+main-SharedResourceRunner: createContextARB: mappedVersionsAvailableSet(decon): true
+main-SharedResourceRunner: createContextARB: Requested GLProfile[GLES3/GLES3.sw] -> 3.0 (ES profile, compat[], hardware)
+main-SharedResourceRunner: createImpl: NOT OK (ARB) - creation failed on eglDevice EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], eglConfig EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]], GLProfile[GLES3/GLES3.sw], shareWith 0x0, error 0x3000
+main-SharedResourceRunner: EGLContext.createContextARBImpl: Start 3.0 (ES profile, compat[], hardware) - @creation, hasOpenGLAPISupport false, useKHRCreateContext true, allowOpenGLAPI false, device EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]
+main-SharedResourceRunner: EGLContext.createContextARBImpl: attrs.1: major 3, flags 0x0, index 2
+main-SharedResourceRunner: EGLContext.createContextARBImpl: OK 3.0 (ES profile, compat[], hardware) - @creation, share 0, direct true
+main-SharedResourceRunner: GLContext.setGLFuncAvail: Given EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]] - 3.0 (ES profile, compat[], hardware) - OpenGL ES 3.1 NVIDIA 355.11, Number(Str) 3.1.0
+main-SharedResourceRunner: GLContext.setGLFuncAvail: Pre version verification - expected 3.0 (ES profile, compat[], hardware), strictMatch false, glVersionsMapping false
+main-SharedResourceRunner: GLContext.setGLFuncAvail: Version verification (Int): String OpenGL ES 3.1 NVIDIA 355.11, Number(Int) 3.1.0
+main-SharedResourceRunner: GLContext.setGLFuncAvail: Post version verification req 3.0 (ES profile, compat[], hardware) -> has 3.1 (ES profile, compat[], hardware), strictMatch false, versionValidated true, versionGL3IntOK true
+Quirks local.0: []
+Quirks local.X: []
+Quirks sticky on EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]: []
+main-SharedResourceRunner: GLContext.setGLFuncAvail.0 validated FQN: .egl_decon_0-0x3010008 - 3.1 (ES profile, compat[], hardware) - OpenGL ES 3.1 NVIDIA 355.11
+main-SharedResourceRunner: Initializing EGLextension address table: EGL-.egl_decon_0
+main-SharedResourceRunner: GLContext EGL ProcAddressTable reusing key(EGL-.egl_decon_0) -> 0x28aef09
+main-SharedResourceRunner: GLContext GL ProcAddressTable mapping key(.egl_decon_0-0x3010008) -> 0x39f80865
+Info: setGL (OpenGL null): main-SharedResourceRunner, <null> -> GLES3Impl, jogamp.opengl.es3.GLES3Impl@39341f73
+    [2]: jogamp.opengl.GLContextImpl.setGL(GLContextImpl.java:347)
+    [3]: jogamp.opengl.GLContextImpl.setGLFunctionAvailability(GLContextImpl.java:1731)
+    [4]: jogamp.opengl.egl.EGLContext.createImpl(EGLContext.java:348)
+    [5]: jogamp.opengl.GLContextImpl.makeCurrentWithinLock(GLContextImpl.java:759)
+    [6]: jogamp.opengl.GLContextImpl.makeCurrent(GLContextImpl.java:642)
+    [7]: jogamp.opengl.GLContextImpl.makeCurrent(GLContextImpl.java:580)
+    [8]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.mapAvailableEGLESConfig(EGLDrawableFactory.java:732)
+    [9]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.createEGLSharedResourceImpl(EGLDrawableFactory.java:561)
+    [10]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.createSharedResource(EGLDrawableFactory.java:513)
+    [11]: jogamp.opengl.SharedResourceRunner.run(SharedResourceRunner.java:297)
+    [12]: java.lang.Thread.run(Thread.java:745)
+main-SharedResourceRunner:ExtensionAvailabilityCache: Pre-caching init jogamp.opengl.es3.GLES3Impl@39341f73, OpenGL 3.1 (ES profile, compat[], hardware) - OpenGL ES 3.1 NVIDIA 355.11
+main-SharedResourceRunner:ExtensionAvailabilityCache: Pre-caching extension availability OpenGL 3.1 (ES profile, compat[], hardware) - OpenGL ES 3.1 NVIDIA 355.11, use glGetString
+main-SharedResourceRunner:ExtensionAvailabilityCache: GL_EXTENSIONS: 138, used glGetString
+EGL PlatformExtensions: Device EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 3, qsz 0, owner <main-SharedResourceRunner>]]]
+EGL PlatformExtensions: EGL vendor NVIDIA, version [client null, server 1.4], clientAPIs OpenGL_ES OpenGL
+EGL extensions (Server): EGL_EXT_buffer_age EGL_EXT_create_context_robustness EGL_EXT_output_base EGL_IMG_context_priority EGL_KHR_config_attribs EGL_KHR_create_context EGL_KHR_fence_sync EGL_KHR_get_all_proc_addresses EGL_KHR_partial_update EGL_KHR_swap_buffers_with_damage EGL_KHR_gl_renderbuffer_image EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_image EGL_KHR_image_base EGL_KHR_image_pixmap EGL_KHR_reusable_sync EGL_KHR_stream EGL_KHR_stream_consumer_gltexture EGL_KHR_stream_cross_process_fd EGL_KHR_stream_fifo EGL_KHR_stream_producer_eglsurface EGL_KHR_surfaceless_context EGL_NV_post_sub_buffer EGL_NV_stream_metadata EGL_NV_stream_remote EGL_NV_stream_socket EGL_NV_stream_socket_unix EGL_NV_stream_sync EGL_NV_stream_consumer_gltexture_yuv EGL_NV_sync EGL_NV_system_time
+main-SharedResourceRunner:ExtensionAvailabilityCache: GLX_EXTENSIONS: 32
+main-SharedResourceRunner:ExtensionAvailabilityCache: GL vendor: NVIDIA Corporation
+main-SharedResourceRunner:ExtensionAvailabilityCache: ALL EXTENSIONS: 170
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_ES_VERSION_3_1 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_ES_VERSION_3_0 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_ES_VERSION_2_0 to known extensions
+main-SharedResourceRunner: GLContext GL ExtensionAvailabilityCache mapping key(.egl_decon_0-0x3010008) -> 0x7efa7a81 - entries: 174
+main-SharedResourceRunner: GLContext.setGLFuncAvail.X: OK .egl_decon_0-0x3010008 - 3.1 (ES profile, compat[ES2, ES3, ES31], FBO, hardware) - glErr 0x0
+main-SharedResourceRunner: createImpl: Created OpenGL context 0x7f96f43479a1,
+	write surface 0x7f96f4347a41,
+	read  surface 0x7f96f4347a41,
+	EGLContext [Version 3.1 (ES profile, compat[ES2, ES3, ES31], FBO, hardware) - OpenGL ES 3.1 NVIDIA 355.11 [GL 3.1.0, vendor 355.11.0 (NVIDIA 355.11)], options 0x3c08, this 0x41ae61be, handle 0x7f96f43479a1, isShared false, jogamp.opengl.es3.GLES3Impl@39341f73,
+	 quirks: [],
+	Drawable: jogamp.opengl.egl.EGLDrawable[realized true,
+	factory    jogamp.opengl.egl.EGLDrawableFactory@1aa05cb8,
+	surface    EGLSurface[ displayHandle 0x1
+, surfaceHandle 0x7f96f4347a41
+, size 64x64
+, UOB[ ]
+, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+, surfaceLock <466eb75d, 5b201029>[count 1, qsz 0, owner <main-SharedResourceRunner>]
+, EGLUpstreamSurfaceHook[ 64x64, jogamp.nativewindow.WrappedSurface: 0x7f96f4347a41]
+, upstreamSurface true ],
+	eglSurface 0x7f96f4347a41,
+	eglConfig  EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]],
+	requested  GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer]],
+	chosen     GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]] ,
+	sharing with 0x0
+main-SharedResourceRunner: Create GL context OK: For jogamp.opengl.egl.EGLContext - 3.1 (ES profile, compat[ES2, ES3, ES31], FBO, hardware) - OpenGL ES 3.1 NVIDIA 355.11 - obj 0x41ae61be, ctx 0x7f96f43479a1, isShared false, surf true 0x7f96f4347a41, <7bf6a584, 2df0865e>[count 1, qsz 0, owner <main-SharedResourceRunner>]
+GLDebugMessageHandler.init(false)
+GLDebugMessageHandler: GL DEBUG not set in ARB ctx options: 3.1 (ES profile, compat[ES2, ES3, ES31], FBO, hardware) - OpenGL ES 3.1 NVIDIA 355.11
+GLDebugMessageHandler.init(false) .. n/a
+GLContext.mapAvailableGLVersion: EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]: 3.0 (ES profile, compat[], hardware) -> 3.1 (ES profile, compat[ES2, ES3, ES31], FBO, hardware)
+GLContext.mapAvailableGLVersion: EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]: 2.0 (ES profile, compat[], hardware) -> 3.1 (ES profile, compat[ES2, ES3, ES31], FBO, hardware)
+main-SharedResourceRunner - EGLGraphicsDevice.open(): EGLGraphicsDevice[type .egl, v0.0.0, connection decon, unitID 0, handle 0x0, owner true, ResourceToolkitLock[obj 0x68513c3, isOwner false, <48914c12, 61fae128>[count 0, qsz 0, owner <NULL>]]]
+EGLDisplayUtil.eglGetDisplay.X: eglDisplay(0x0): 0x1, OK, singletonEGLDisplay EGLDisplayRef[0x1: refCnt 1] (use false)
+EGLDisplayUtil.eglInitialize(0x1 ...): EGLDisplayRef[0x1: refCnt 2] = true, eglVersion 1.4, singletonEGLDisplay EGLDisplayRef[0x1: refCnt 2] (use false)
+EGLGraphicsConfiguration.eglChooseConfig: eglChooseConfig eglDisplay 0x1, nativeVisualID 0x0, capsChosen GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], on-scr[.]], winbits WINDOW, fboAvail true, device EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x68513c3, isOwner false, <48914c12, 61fae128>[count 0, qsz 0, owner <NULL>]]], .egl_decon_0, numEGLConfigs 118
+EGLGraphicsConfiguration.eglChooseConfig: #1 eglChooseConfig: recommended fbcfg 0xcaf365, idx 0
+EGLGraphicsConfiguration.eglChooseConfig: #1 useRecommendedIndex true, skipCapsChooser true
+EGLGraphicsConfiguration.eglChooseConfig: #1 fbcfg caps GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], on-scr[.], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+EGLGraphicsConfiguration.eglChooseConfig: got configs: 1
+0: GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], on-scr[.], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+EGLGraphicsConfiguration.eglChooseConfig: X chosen :0, eglConfig: 0xcaf365: EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x68513c3, isOwner false, <48914c12, 61fae128>[count 0, qsz 0, owner <NULL>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], on-scr[.], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+EGLSurface.ctor().3: EGLSurface[ displayHandle 0x1
+, surfaceHandle 0x0
+, size 64x64
+, UOB[ OWNS_DEVICE ]
+, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x68513c3, isOwner false, <48914c12, 61fae128>[count 0, qsz 0, owner <NULL>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], on-scr[.], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+, surfaceLock <3c4ec3f3, 127bc4b2>[count 0, qsz 0, owner <NULL>]
+, GenericUpstreamSurfacelessHook[pixel 64x64]
+, upstreamSurface false ]
+Surface Hierarchy of jogamp.opengl.egl.EGLSurface
+  Surface device EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x68513c3, isOwner false, <48914c12, 61fae128>[count 0, qsz 0, owner <NULL>]]]
+  Surface size 64x64, handle 0x0
+  Upstream options UOB[ OWNS_DEVICE ]
+  Upstream Hook com.jogamp.nativewindow.GenericUpstreamSurfacelessHook
+    Upstream Hook's Surface NULL
+
+main-SharedResourceRunner: setRealized: drawable EGLDrawable, surface EGLSurface, isProxySurface true: false -> true
+    [2]: jogamp.opengl.GLDrawableImpl.setRealized(GLDrawableImpl.java:184)
+    [3]: jogamp.opengl.GLDrawableFactoryImpl.probeSurfacelessCtx(GLDrawableFactoryImpl.java:123)
+    [4]: jogamp.opengl.egl.EGLDrawableFactory.access$1000(EGLDrawableFactory.java:89)
+    [5]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.mapAvailableEGLESConfig(EGLDrawableFactory.java:745)
+    [6]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.createEGLSharedResourceImpl(EGLDrawableFactory.java:561)
+    [7]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.createSharedResource(EGLDrawableFactory.java:513)
+    [8]: jogamp.opengl.SharedResourceRunner.run(SharedResourceRunner.java:297)
+    [9]: java.lang.Thread.run(Thread.java:745)
+main-SharedResourceRunner: EGLDrawable.setRealized(true): NOP - EGLSurface[ displayHandle 0x1
+, surfaceHandle 0x0
+, size 64x64
+, UOB[ OWNS_SURFACE | OWNS_DEVICE | WINDOW_INVISIBLE | SURFACELESS ]
+, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x68513c3, isOwner true, <48914c12, 61fae128>[count 1, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], on-scr[.], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+, surfaceLock <3c4ec3f3, 127bc4b2>[count 1, qsz 0, owner <main-SharedResourceRunner>]
+, GenericUpstreamSurfacelessHook[pixel 64x64]
+, upstreamSurface false ]
+main-SharedResourceRunner: createHandle of EGLSurface[ displayHandle 0x1
+, surfaceHandle 0x0
+, size 64x64
+, UOB[ OWNS_SURFACE | OWNS_DEVICE | WINDOW_INVISIBLE | SURFACELESS ]
+, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x68513c3, isOwner true, <48914c12, 61fae128>[count 1, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], on-scr[.], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+, surfaceLock <3c4ec3f3, 127bc4b2>[count 1, qsz 0, owner <main-SharedResourceRunner>]
+, GenericUpstreamSurfacelessHook[pixel 64x64]
+, upstreamSurface false ]
+Surface Hierarchy of jogamp.opengl.egl.EGLSurface
+  Surface device EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x68513c3, isOwner true, <48914c12, 61fae128>[count 1, qsz 0, owner <main-SharedResourceRunner>]]]
+  Surface size 64x64, handle 0x0
+  Upstream options UOB[ OWNS_SURFACE | OWNS_DEVICE | WINDOW_INVISIBLE | SURFACELESS ]
+  Upstream Hook com.jogamp.nativewindow.GenericUpstreamSurfacelessHook
+    Upstream Hook's Surface NULL
+
+main-SharedResourceRunner: GLContext.makeCurrent: Surfaceless evaluate
+main-SharedResourceRunner: GLContext.makeCurrent: Surfaceless OK - validated
+main-SharedResourceRunner: GLContextImpl.destroy.0: obj 0x41ae61be, ctx 0x7f96f43479a1, isShared false, surf true 0x0, <7bf6a584, 2df0865e>[count 1, qsz 0, owner <main-SharedResourceRunner>]
+main-SharedResourceRunner: GLContext.resetStates(isInit false)
+main-SharedResourceRunner: GLContextImpl.destroy.X: obj 0x41ae61be, ctx 0x0, isShared false, surf true 0x0, <7bf6a584, 2df0865e>[count 0, qsz 0, owner <NULL>]
+main-SharedResourceRunner: setRealized: drawable EGLDrawable, surface EGLSurface, isProxySurface true: true -> false
+    [2]: jogamp.opengl.GLDrawableImpl.setRealized(GLDrawableImpl.java:184)
+    [3]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.mapAvailableEGLESConfig(EGLDrawableFactory.java:780)
+    [4]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.createEGLSharedResourceImpl(EGLDrawableFactory.java:561)
+    [5]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.createSharedResource(EGLDrawableFactory.java:513)
+    [6]: jogamp.opengl.SharedResourceRunner.run(SharedResourceRunner.java:297)
+    [7]: java.lang.Thread.run(Thread.java:745)
+main-SharedResourceRunner: destroyHandle of EGLSurface[ displayHandle 0x1
+, surfaceHandle 0x0
+, size 64x64
+, UOB[ OWNS_SURFACE | OWNS_DEVICE | WINDOW_INVISIBLE | SURFACELESS ]
+, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x68513c3, isOwner true, <48914c12, 61fae128>[count 1, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], on-scr[.], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+, surfaceLock <3c4ec3f3, 127bc4b2>[count 0, qsz 0, owner <NULL>]
+, GenericUpstreamSurfacelessHook[pixel 64x64]
+, upstreamSurface false ]
+main-SharedResourceRunner: EGLDrawable.setRealized(false): NOP - EGLSurface[ displayHandle 0x1
+, surfaceHandle 0x0
+, size 64x64
+, UOB[ OWNS_SURFACE | OWNS_DEVICE | WINDOW_INVISIBLE | SURFACELESS ]
+, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x68513c3, isOwner true, <48914c12, 61fae128>[count 1, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], on-scr[.], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+, surfaceLock <3c4ec3f3, 127bc4b2>[count 0, qsz 0, owner <NULL>]
+, GenericUpstreamSurfacelessHook[pixel 64x64]
+, upstreamSurface false ]
+main-SharedResourceRunner - EGLGraphicsDevice.close(): EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x68513c3, isOwner false, <48914c12, 61fae128>[count 0, qsz 0, owner <NULL>]]]
+EGLDisplayUtil.eglTerminate.X(0x1 ...): EGLDisplayRef[0x1: refCnt 1] = true, singletonEGLDisplay EGLDisplayRef[0x1: refCnt 1] (use false)
+main-SharedResourceRunner: setRealized: drawable EGLDrawable, surface EGLSurface, isProxySurface true: true -> false
+    [2]: jogamp.opengl.GLDrawableImpl.setRealized(GLDrawableImpl.java:184)
+    [3]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.mapAvailableEGLESConfig(EGLDrawableFactory.java:783)
+    [4]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.createEGLSharedResourceImpl(EGLDrawableFactory.java:561)
+    [5]: jogamp.opengl.egl.EGLDrawableFactory$SharedResourceImplementation.createSharedResource(EGLDrawableFactory.java:513)
+    [6]: jogamp.opengl.SharedResourceRunner.run(SharedResourceRunner.java:297)
+    [7]: java.lang.Thread.run(Thread.java:745)
+main-SharedResourceRunner: destroyHandle of EGLSurface[ displayHandle 0x1
+, surfaceHandle 0x7f96f4347a41
+, size 64x64
+, UOB[ ]
+, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+, surfaceLock <466eb75d, 5b201029>[count 0, qsz 0, owner <NULL>]
+, EGLUpstreamSurfaceHook[ 64x64, jogamp.nativewindow.WrappedSurface: 0x7f96f4347a41]
+, upstreamSurface true ]
+main-SharedResourceRunner: EGLDrawable.setRealized(false): NOP - EGLSurface[ displayHandle 0x1
+, surfaceHandle 0x7f96f4347a41
+, size 64x64
+, UOB[ ]
+, EGLGraphicsConfiguration[DefaultGraphicsScreen[EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],
+	eglConfigHandle 0xcaf365, eglConfigID 0x3d,
+	requested GLCaps[rgba 5/5/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, one, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer]],
+	chosen    GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.sw], offscr[pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]]
+, surfaceLock <466eb75d, 5b201029>[count 0, qsz 0, owner <NULL>]
+, EGLUpstreamSurfaceHook[ 64x64, jogamp.nativewindow.WrappedSurface: 0x7f96f4347a41]
+, upstreamSurface true ]
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.destroy(EGLSurface): EGLUpstreamSurfaceHook[ 64x64, jogamp.nativewindow.WrappedSurface: 0x7f96f4347a41]
+main-SharedResourceRunner: EGLUpstreamSurfaceHook.destroy(EGLSurface): EGLUpstreamSurfaceHook[ 64x64, jogamp.nativewindow.WrappedSurface: 0x0]
+EGLDrawableFactory.createShared: devices: queried nativeTK false, adevice EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 1, qsz 0, owner <main-SharedResourceRunner>]]], defaultDevice EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner true, <26aa12dd, 3fd7a715>[count 1, qsz 0, owner <main-SharedResourceRunner>]]]
+EGLDrawableFactory.createShared: context GLn: false, quirks null
+EGLDrawableFactory.createShared: context ES1: true, quirks []
+EGLDrawableFactory.createShared: context ES2: false, quirks []
+EGLDrawableFactory.createShared: context ES3: true, quirks []
+EGLDrawableFactory.map 0
+SharedResourceRunner.run(): READY - main-SharedResourceRunner
+SharedResourceRunner.initializeAndWait END init: EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner false, <26aa12dd, 3fd7a715>[count 0, qsz 0, owner <NULL>]]], release: null - main
+SharedResourceRunner.getOrCreateShared() EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner false, <26aa12dd, 3fd7a715>[count 0, qsz 0, owner <NULL>]]]: success - main
+GLProfile.initProfilesForDevice: EGLGraphicsDevice[type .egl, v1.4.0, connection decon, unitID 0, handle 0x1, owner true, ResourceToolkitLock[obj 0x131276c2, isOwner false, <26aa12dd, 3fd7a715>[count 0, qsz 0, owner <NULL>]]]: egl Shared Ctx true
+GLProfile.init map decon, desktopCtxUndef false, esCtxUndef false
+GLProfile.init map *** no mapping for GL4bc on device decon
+GLProfile.init map *** no mapping for GL3bc on device decon
+GLProfile.init map *** no mapping for GL2 on device decon
+GLProfile.init map *** no mapping for GL4 on device decon
+GLProfile.init map *** no mapping for GL3 on device decon
+GLProfile.init map GLProfile[GLES3/GLES3.hw] on device decon
+GLProfile.init map defaultHW GLProfile[GLES3/GLES3.hw] on device decon
+GLProfile.init map GLProfile[GL4ES3/GLES3.hw] on device decon
+GLProfile.init map defaultAny GLProfile[GL4ES3/GLES3.hw] on device decon
+GLProfile.init map *** no mapping for GL2GL3 on device decon
+GLProfile.init map GLProfile[GLES2/GLES3.hw] on device decon
+GLProfile.init map GLProfile[GL2ES2/GLES3.hw] on device decon
+GLProfile.init map GLProfile[GLES1/GLES1.hw] on device decon
+GLProfile.init map GLProfile[GL2ES1/GLES1.hw] on device decon
+main: createContextARB: SET mappedVersionsAvailableSet .egl_decon_0
+.egl_decon_0-0x1080000: 1.1 (ES profile, compat[FP32], hardware)
+.egl_decon_0-0x2080000: 3.1 (ES profile, compat[ES2, ES3, ES31], FBO, hardware)
+.egl_decon_0-0x3080000: 3.1 (ES profile, compat[ES2, ES3, ES31], FBO, hardware)
+GLProfile.initProfilesForDevice: decon: added profile(s): desktop false, egl true
+GLProfile.initProfilesForDevice: decon: Natives[GL4bc false, GL4 false, GLES3 true [3.1 (ES profile, compat[ES2, ES3, ES31], FBO, hardware)], GL3bc false, GL3 false, GL2 false, GLES2 true [3.1 (ES profile, compat[ES2, ES3, ES31], FBO, hardware)], GLES1 true [1.1 (ES profile, compat[FP32], hardware)], count 3 / 8], Common[, GL4ES3 true, GL2GL3 false, GL2ES2 true, GL2ES1 true], Mappings[GLES1 GLProfile[GLES1/GLES1.hw], GLES2 GLProfile[GLES2/GLES3.hw], GL2ES1 GLProfile[GL2ES1/GLES1.hw], GL4ES3 GLProfile[GL4ES3/GLES3.hw], GL2ES2 GLProfile[GL2ES2/GLES3.hw], GLES3 GLProfile[GLES3/GLES3.hw], , default GLProfile[GLES3/GLES3.hw], count 6 / 12]
+GLProfile.dumpGLInfo: shared context n/a
+GLCaps[egl cfg 0x1, vid 0x24: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer, bitmap], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x2, vid 0x6f: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer, bitmap], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x3, vid 0xba: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer, bitmap], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x4, vid 0x28: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer, bitmap], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x5, vid 0x73: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer, bitmap], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x6, vid 0xbe: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer, bitmap], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x7, vid 0x2c: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 0/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer, bitmap], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x8, vid 0x77: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 0/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer, bitmap], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x9, vid 0xc2: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 0/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer, bitmap], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0xa, vid 0x38: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/2, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0xb, vid 0x83: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/2, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0xc, vid 0xce: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/2, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0xd, vid 0x30: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/2, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0xe, vid 0x7b: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/2, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0xf, vid 0xc6: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/2, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x10, vid 0x3a: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/4, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x11, vid 0x85: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/4, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x12, vid 0xd0: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/4, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x13, vid 0x32: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/4, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x14, vid 0x7d: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/4, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x15, vid 0xc8: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/4, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x16, vid 0x44: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/8, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x17, vid 0x8f: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/8, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x18, vid 0x5c: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/8, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x19, vid 0xa7: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/8, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x1a, vid 0xda: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/8, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x1b, vid 0xf2: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/8, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x1c, vid 0x40: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/8, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x1d, vid 0x8b: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/8, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x1e, vid 0x50: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/8, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x1f, vid 0x9b: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/8, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x20, vid 0xd6: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/8, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x21, vid 0xe6: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/8, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x22, vid 0x4c: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x23, vid 0x97: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x24, vid 0x5f: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x25, vid 0xaa: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x26, vid 0x60: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x27, vid 0xab: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x28, vid 0xe2: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x29, vid 0xf5: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x2a, vid 0xf6: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x2b, vid 0x48: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x2c, vid 0x93: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x2d, vid 0x53: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x2e, vid 0x9e: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x2f, vid 0x54: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x30, vid 0x9f: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x31, vid 0xde: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x32, vid 0xe9: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x33, vid 0xea: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x34, vid 0x6c: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/32, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x35, vid 0xb7: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/32, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x36, vid 0x102: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/32, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x37, vid 0x68: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/32, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x38, vid 0xb3: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/32, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x39, vid 0xfe: rgba 8/8/8/8, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/32, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x3a, vid 0x21: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer, bitmap], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x3b, vid 0x22: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer, bitmap], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x3c, vid 0x23: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer, bitmap], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x3d, vid 0x27: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer, bitmap], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x3e, vid 0x72: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer, bitmap], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x3f, vid 0xbd: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer, bitmap], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x40, vid 0x2b: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 0/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer, bitmap], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x41, vid 0x76: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 0/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer, bitmap], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x42, vid 0xc1: rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 0/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer, bitmap], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x43, vid 0x37: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/2, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x44, vid 0x82: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/2, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x45, vid 0xcd: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/2, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x46, vid 0x2f: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/2, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x47, vid 0x7a: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/2, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x48, vid 0xc5: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/2, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x49, vid 0x39: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/4, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x4a, vid 0x84: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/4, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x4b, vid 0xcf: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/4, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x4c, vid 0x31: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/4, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x4d, vid 0x7c: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/4, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x4e, vid 0xc7: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/4, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x4f, vid 0x43: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/8, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x50, vid 0x8e: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/8, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x51, vid 0x5b: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/8, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x52, vid 0xa6: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/8, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x53, vid 0xd9: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/8, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x54, vid 0xf1: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/8, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x55, vid 0x3f: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/8, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x56, vid 0x8a: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/8, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x57, vid 0x4f: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/8, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x58, vid 0x9a: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/8, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x59, vid 0xd5: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/8, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x5a, vid 0xe5: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/8, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x5b, vid 0x4b: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x5c, vid 0x96: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x5d, vid 0x5d: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x5e, vid 0xa8: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x5f, vid 0x5e: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x60, vid 0xa9: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x61, vid 0xe1: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x62, vid 0xf3: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x63, vid 0xf4: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x64, vid 0x47: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x65, vid 0x92: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x66, vid 0x51: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x67, vid 0x9c: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x68, vid 0x52: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x69, vid 0x9d: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x6a, vid 0xdd: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x6b, vid 0xe7: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x6c, vid 0xe8: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/16, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x6d, vid 0x6b: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/32, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x6e, vid 0xb6: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/32, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x6f, vid 0x101: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/32, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x70, vid 0x67: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/32, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x71, vid 0xb2: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/32, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x72, vid 0xfd: rgba 8/8/8/1, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/32, sample-ext default, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], on-scr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x73, vid 0x0: rgba 5/6/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/8/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], offscr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x74, vid 0x0: rgba 5/6/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], offscr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x75, vid 0x0: rgba 5/6/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], offscr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+GLCaps[egl cfg 0x76, vid 0x0: rgba 5/6/5/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 0/0/0, dbl, mono  , hw, GLProfile[GLES3/GLES3.hw], offscr[fbo, pbuffer], [0x4d: GL, GLES1, GLES2, GLES3, VG]]
+Info: GLProfile.initProfilesForDevice: X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x0, owner false, ResourceToolkitLock[obj 0x614ddd49, isOwner false, <1f554b06, 694e1548>[count 0, qsz 0, owner <NULL>]]] (com.jogamp.nativewindow.x11.X11GraphicsDevice), isSet false, hasDesktopGLFactory true, hasEGLFactory true
+GLProfile.init map :0.0, desktopCtxUndef true, esCtxUndef true
+GLProfile.init map GLProfile[GL4bc/GL4bc.sw] on device :0.0
+GLProfile.init map defaultAny GLProfile[GL4bc/GL4bc.sw] on device :0.0
+GLProfile.init map GLProfile[GL3bc/GL3bc.sw] on device :0.0
+GLProfile.init map GLProfile[GL2/GL2.sw] on device :0.0
+GLProfile.init map GLProfile[GL4/GL4.sw] on device :0.0
+GLProfile.init map GLProfile[GL3/GL3.sw] on device :0.0
+GLProfile.init map GLProfile[GLES3/GLES3.sw] on device :0.0
+GLProfile.init map GLProfile[GL4ES3/GL4bc.sw] on device :0.0
+GLProfile.init map GLProfile[GL2GL3/GL2.sw] on device :0.0
+GLProfile.init map GLProfile[GLES2/GLES2.sw] on device :0.0
+GLProfile.init map GLProfile[GL2ES2/GL2.sw] on device :0.0
+GLProfile.init map GLProfile[GLES1/GLES1.sw] on device :0.0
+GLProfile.init map GLProfile[GL2ES1/GL2.sw] on device :0.0
+SharedResourceRunner.getOrCreateShared() X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x0, owner false, ResourceToolkitLock[obj 0x614ddd49, isOwner false, <1f554b06, 694e1548>[count 0, qsz 0, owner <NULL>]]]: trying - main
+    [2]: jogamp.opengl.SharedResourceRunner.getOrCreateShared(SharedResourceRunner.java:188)
+    [3]: jogamp.opengl.x11.glx.X11GLXDrawableFactory.getOrCreateSharedResourceImpl(X11GLXDrawableFactory.java:391)
+    [4]: jogamp.opengl.x11.glx.X11GLXDrawableFactory.getOrCreateSharedResourceImpl(X11GLXDrawableFactory.java:83)
+    [5]: jogamp.opengl.GLDrawableFactoryImpl.getOrCreateSharedResource(GLDrawableFactoryImpl.java:187)
+    [6]: jogamp.opengl.GLDrawableFactoryImpl.createSharedResourceImpl(GLDrawableFactoryImpl.java:216)
+    [7]: com.jogamp.opengl.GLDrawableFactory.createSharedResource(GLDrawableFactory.java:375)
+    [8]: com.jogamp.opengl.GLProfile.initProfilesForDeviceCritical(GLProfile.java:1905)
+    [9]: com.jogamp.opengl.GLProfile.initProfilesForDevice(GLProfile.java:1866)
+    [10]: com.jogamp.opengl.GLProfile.initProfilesForDefaultDevices(GLProfile.java:1835)
+    [11]: com.jogamp.opengl.GLProfile.access$000(GLProfile.java:79)
+    [12]: com.jogamp.opengl.GLProfile$1.run(GLProfile.java:229)
+    [13]: java.security.AccessController.doPrivileged(Native Method)
+    [14]: com.jogamp.opengl.GLProfile.initSingleton(GLProfile.java:215)
+    [15]: com.jogamp.opengl.GLProfile.getProfileMap(GLProfile.java:2272)
+    [16]: com.jogamp.opengl.GLProfile.get(GLProfile.java:987)
+    [17]: com.jogamp.opengl.GLProfile.getDefault(GLProfile.java:721)
+    [18]: com.jogamp.opengl.GLProfile.getDefault(GLProfile.java:732)
+    [19]: com.jme3.system.jogl.JoglNewtAbstractDisplay.initGLCanvas(JoglNewtAbstractDisplay.java:79)
+    [20]: com.jme3.system.jogl.JoglNewtDisplay.privateInit(JoglNewtDisplay.java:145)
+    [21]: com.jme3.system.jogl.JoglNewtDisplay.create(JoglNewtDisplay.java:168)
+    [22]: com.jme3.app.Application.start(Application.java:446)
+    [23]: com.jme3.app.Application.start(Application.java:407)
+    [24]: com.jme3.app.SimpleApplication.start(SimpleApplication.java:132)
+    [25]: sandbox.Main0.main(Main0.java:31)
+X11Util.Display: openDisplay [reuse false] NamedX11Display[:0.0, 0x7f9768740950, refCount 1, unCloseable false]. Thread main
+XineramaIsEnabled Cache: Display :0.0 (0x7f9768740950) -> true
+main - X11GraphicsDevice.close(): X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x7f9768740950, owner true, ResourceToolkitLock[obj 0x394e1a0f, isOwner false, <27a5f880, 1d29cf23>[count 0, qsz 0, owner <NULL>]]]
+X11Util.Display: Closed (real: true) NamedX11Display[:0.0, 0x7f9768740950, refCount 0, unCloseable false]. Thread main
+GLX is available on device/server: X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x0, owner true, ResourceToolkitLock[obj 0x394e1a0f, isOwner false, <27a5f880, 1d29cf23>[count 0, qsz 0, owner <NULL>]]]
+SharedResourceRunner.doAndWait() START init: X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x0, owner false, ResourceToolkitLock[obj 0x614ddd49, isOwner false, <1f554b06, 694e1548>[count 0, qsz 0, owner <NULL>]]], release: null - main
+SharedResourceRunner.doAndWait() set command: X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x0, owner false, ResourceToolkitLock[obj 0x614ddd49, isOwner false, <1f554b06, 694e1548>[count 0, qsz 0, owner <NULL>]]], release: null - main
+SharedResourceRunner.run(): WOKE UP for device connection init: X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x0, owner false, ResourceToolkitLock[obj 0x614ddd49, isOwner false, <1f554b06, 694e1548>[count 0, qsz 0, owner <NULL>]]], release: null - main-SharedResourceRunner
+SharedResourceRunner.run(): create Shared for: X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x0, owner false, ResourceToolkitLock[obj 0x614ddd49, isOwner false, <1f554b06, 694e1548>[count 0, qsz 0, owner <NULL>]]] - main-SharedResourceRunner
+X11Util.Display: openDisplay [reuse false] NamedX11Display[:0.0, 0x7f96fc000b90, refCount 1, unCloseable false]. Thread main-SharedResourceRunner
+main-SharedResourceRunner - X11GraphicsDevice.getDefaultDisplay() of X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x7f96fc000b90, owner true, ResourceToolkitLock[obj 0x63f2e64b, isOwner true, <26f07451, 1bae56e1>[count 1, qsz 0, owner <main-SharedResourceRunner>]]]: 0, count 1
+main-SharedResourceRunner - X11GraphicsDevice.getDefaultDisplay() of X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x7f96fc000b90, owner true, ResourceToolkitLock[obj 0x63f2e64b, isOwner true, <26f07451, 1bae56e1>[count 1, qsz 0, owner <main-SharedResourceRunner>]]]: 0, count 1
+glXChooseFBConfig recommended fbcfg 0x10d, idx 0
+useRecommendedIndex true, skipCapsChooser true
+user  caps GLCaps[rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, dbl, mono  , hw, GLProfile[GL2/GL2.sw], on-scr[.]]
+fbcfg caps 60, availCaps GLCaps[glx vid 0x27, fbc 0x10d: rgba 8/8/8/0, opaque, accum-rgba 16/16/16/16, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GL2/GL2.sw], on-scr[.]]
+X11GLXGraphicsConfiguration.chooseGraphicsConfigurationFBConfig: got configs: 1
+0: GLCaps[glx vid 0x27, fbc 0x10d: rgba 8/8/8/0, opaque, accum-rgba 16/16/16/16, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GL2/GL2.sw], on-scr[.]]
+X11GLXGraphicsConfiguration.chooseGraphicsConfigurationStatic(visualID 0x0, X11GraphicsScreen[X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x7f96fc000b90, owner true, ResourceToolkitLock[obj 0x63f2e64b, isOwner true, <26f07451, 1bae56e1>[count 1, qsz 0, owner <main-SharedResourceRunner>]]], idx 0],GLCaps[rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, dbl, mono  , hw, GLProfile[GL2/GL2.sw], on-scr[.]]): X11GLXGraphicsConfiguration[X11GraphicsScreen[X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x7f96fc000b90, owner true, ResourceToolkitLock[obj 0x63f2e64b, isOwner true, <26f07451, 1bae56e1>[count 1, qsz 0, owner <main-SharedResourceRunner>]]], idx 0], visualID 0x27, fbConfigID 0x10d,
+	requested GLCaps[rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, dbl, mono  , hw, GLProfile[GL2/GL2.sw], on-scr[.]],
+	chosen    GLCaps[glx vid 0x27, fbc 0x10d: rgba 8/8/8/0, opaque, accum-rgba 16/16/16/16, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GL2/GL2.sw], on-scr[.]]]
+main-SharedResourceRunner: setRealized: drawable X11OnscreenGLXDrawable, surface WrappedSurface, isProxySurface true: false -> true
+    [2]: jogamp.opengl.GLDrawableImpl.setRealized(GLDrawableImpl.java:184)
+    [3]: jogamp.opengl.x11.glx.X11GLXDrawableFactory$SharedResourceImplementation.createSharedResource(X11GLXDrawableFactory.java:284)
+    [4]: jogamp.opengl.SharedResourceRunner.run(SharedResourceRunner.java:297)
+    [5]: java.lang.Thread.run(Thread.java:745)
+ProxySurfaceImpl: surface change 0x0 -> 0x3c00002
+X11GLXGraphicsConfiguration.updateGraphicsConfiguration kept:X11GLXGraphicsConfiguration[X11GraphicsScreen[X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x7f96fc000b90, owner true, ResourceToolkitLock[obj 0x63f2e64b, isOwner true, <26f07451, 1bae56e1>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0], visualID 0x27, fbConfigID 0x10d,
+	requested GLCaps[rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, dbl, mono  , hw, GLProfile[GL2/GL2.sw], on-scr[.]],
+	chosen    GLCaps[glx vid 0x27, fbc 0x10d: rgba 8/8/8/0, opaque, accum-rgba 16/16/16/16, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GL2/GL2.sw], on-scr[.]]]
+main-SharedResourceRunner: X11GLXDrawable.setRealized(true): X11GLXGraphicsConfiguration[X11GraphicsScreen[X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x7f96fc000b90, owner true, ResourceToolkitLock[obj 0x63f2e64b, isOwner true, <26f07451, 1bae56e1>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], idx 0], visualID 0x27, fbConfigID 0x10d,
+	requested GLCaps[rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, dbl, mono  , hw, GLProfile[GL2/GL2.sw], on-scr[.]],
+	chosen    GLCaps[glx vid 0x27, fbc 0x10d: rgba 8/8/8/0, opaque, accum-rgba 16/16/16/16, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GL2/GL2.sw], on-scr[.]]]
+main-SharedResourceRunner: GLContext.resetStates(isInit true)
+main-SharedResourceRunner: X11GLXContext.createImpl: START GLCaps[glx vid 0x27, fbc 0x10d: rgba 8/8/8/0, opaque, accum-rgba 16/16/16/16, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GL2/GL2.sw], on-scr[.]], share 0x0
+main-SharedResourceRunner: Use ARB[avail[disabled false, quirk false], fbCfg true -> true], shared false]
+main-SharedResourceRunner: GLContext.setGLFuncAvail: Given X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x7f96fc000b90, owner true, ResourceToolkitLock[obj 0x63f2e64b, isOwner true, <26f07451, 1bae56e1>[count 2, qsz 0, owner <main-SharedResourceRunner>]]] - 0.0 (Compat profile, compat[], hardware) - 4.5.0 NVIDIA 355.11, Number(Str) 4.5.0
+main-SharedResourceRunner: GLContext.setGLFuncAvail: Pre version verification - expected 0.0 (Compat profile, compat[], hardware), strictMatch false, glVersionsMapping true
+main-SharedResourceRunner: GLContext.setGLFuncAvail: Version verification (Int): String 4.5.0 NVIDIA 355.11, Number(Int) 4.5.0
+main-SharedResourceRunner: GLContext.setGLFuncAvail: Post version verification req 0.0 (Compat profile, compat[], hardware) -> has 4.5 (Compat profile, compat[], hardware), strictMatch false, versionValidated true, versionGL3IntOK true
+Quirks local.0: []
+Quirks local.X: []
+Quirks sticky on X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x7f96fc000b90, owner true, ResourceToolkitLock[obj 0x63f2e64b, isOwner true, <26f07451, 1bae56e1>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]: []
+main-SharedResourceRunner: GLContext.setGLFuncAvail.0 validated FQN: .x11_:0.0_0-0x4050002 - 4.5 (Compat profile, compat[], hardware) - 4.5.0 NVIDIA 355.11
+main-SharedResourceRunner: Initializing GLX extension address table: GLX-.x11_:0.0_0
+main-SharedResourceRunner: GLContext GLX ProcAddressTable mapping key(GLX-.x11_:0.0_0) -> 0x61a759dc
+main-SharedResourceRunner: GLContext GL ProcAddressTable mapping key(.x11_:0.0_0-0x4050002) -> 0x4fc66823
+Info: setGL (OpenGL null): main-SharedResourceRunner, <null> -> GL4bcImpl, jogamp.opengl.gl4.GL4bcImpl@7caae4ef
+    [2]: jogamp.opengl.GLContextImpl.setGL(GLContextImpl.java:347)
+    [3]: jogamp.opengl.GLContextImpl.setGLFunctionAvailability(GLContextImpl.java:1731)
+    [4]: jogamp.opengl.x11.glx.X11GLXContext.createImpl(X11GLXContext.java:373)
+    [5]: jogamp.opengl.GLContextImpl.makeCurrentWithinLock(GLContextImpl.java:759)
+    [6]: jogamp.opengl.GLContextImpl.makeCurrent(GLContextImpl.java:642)
+    [7]: jogamp.opengl.GLContextImpl.makeCurrent(GLContextImpl.java:580)
+    [8]: jogamp.opengl.x11.glx.X11GLXDrawableFactory$SharedResourceImplementation.createSharedResource(X11GLXDrawableFactory.java:297)
+    [9]: jogamp.opengl.SharedResourceRunner.run(SharedResourceRunner.java:297)
+    [10]: java.lang.Thread.run(Thread.java:745)
+main-SharedResourceRunner:ExtensionAvailabilityCache: Pre-caching init jogamp.opengl.gl4.GL4bcImpl@7caae4ef, OpenGL 4.5 (Compat profile, compat[], hardware) - 4.5.0 NVIDIA 355.11
+main-SharedResourceRunner:ExtensionAvailabilityCache: Pre-caching extension availability OpenGL 4.5 (Compat profile, compat[], hardware) - 4.5.0 NVIDIA 355.11, use glGetStringi
+main-SharedResourceRunner:ExtensionAvailabilityCache: GL_EXTENSIONS: 315, used glGetStringi
+GLX Version client 1.4.0, server: 1.4.0
+GLX extensions (glXGetClientString): GLX_ARB_get_proc_address GLX_ARB_multisample GLX_EXT_visual_info GLX_EXT_visual_rating GLX_EXT_import_context GLX_SGI_video_sync GLX_NV_swap_group GLX_NV_video_out GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGI_swap_control GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_buffer_age GLX_ARB_create_context GLX_ARB_create_context_profile GLX_NV_float_buffer GLX_ARB_fbconfig_float GLX_EXT_fbconfig_packed_float GLX_EXT_texture_from_pixmap GLX_EXT_framebuffer_sRGB GLX_NV_present_video GLX_NV_copy_image GLX_NV_copy_buffer GLX_NV_multisample_coverage GLX_NV_video_capture GLX_EXT_create_context_es_profile GLX_EXT_create_context_es2_profile GLX_ARB_create_context_robustness GLX_NV_delay_before_swap GLX_EXT_stereo_tree GLX_ARB_context_flush_control 
+GLX extensions (glXQueryExtensionsString): GLX_EXT_visual_info GLX_EXT_visual_rating GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGI_video_sync GLX_SGI_swap_control GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_texture_from_pixmap GLX_EXT_buffer_age GLX_ARB_create_context GLX_ARB_create_context_profile GLX_EXT_create_context_es_profile GLX_EXT_create_context_es2_profile GLX_ARB_create_context_robustness GLX_NV_delay_before_swap GLX_EXT_stereo_tree GLX_ARB_context_flush_control GLX_ARB_multisample GLX_NV_float_buffer GLX_ARB_fbconfig_float GLX_EXT_framebuffer_sRGB GLX_NV_multisample_coverage GLX_NV_copy_image GLX_ARB_get_proc_address 
+GLX extensions (glXQueryServerString): GLX_EXT_visual_info GLX_EXT_visual_rating GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGI_video_sync GLX_SGI_swap_control GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_texture_from_pixmap GLX_EXT_buffer_age GLX_ARB_create_context GLX_ARB_create_context_profile GLX_EXT_create_context_es_profile GLX_EXT_create_context_es2_profile GLX_ARB_create_context_robustness GLX_NV_delay_before_swap GLX_EXT_stereo_tree GLX_ARB_context_flush_control GLX_ARB_multisample GLX_NV_float_buffer GLX_ARB_fbconfig_float GLX_EXT_framebuffer_sRGB GLX_NV_multisample_coverage GLX_NV_copy_image 
+main-SharedResourceRunner:ExtensionAvailabilityCache: GLX_EXTENSIONS: 32
+main-SharedResourceRunner:ExtensionAvailabilityCache: GL vendor: NVIDIA Corporation
+main-SharedResourceRunner:ExtensionAvailabilityCache: ALL EXTENSIONS: 347
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_4_5 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_4_4 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_4_3 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_4_2 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_4_1 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_4_0 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_3_3 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_3_2 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_3_1 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_3_0 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_2_1 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_2_0 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_1_5 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_1_4 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_1_3 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_1_2 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_1_1 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_1_0 to known extensions
+main-SharedResourceRunner: GLContext GL ExtensionAvailabilityCache mapping key(.x11_:0.0_0-0x4050002) -> 0x6881436a - entries: 366
+main-SharedResourceRunner: GLContext.setGLFuncAvail.X: OK .x11_:0.0_0-0x4050002 - 4.5 (Compat profile, compat[ES2, ES3, ES31], FBO, hardware) - glErr 0x0
+main-SharedResourceRunner: createContextARB: mappedVersionsAvailableSet(:0.0): false
+main-SharedResourceRunner: createContextARBVersions.1: share 0, direct true, version 4.5, major[4..4], minor[0..5]
+main-SharedResourceRunner: Initializing GLX extension address table: GLX-.x11_:0.0_0
+main-SharedResourceRunner: GLContext GLX ProcAddressTable reusing key(GLX-.x11_:0.0_0) -> 0x61a759dc
+main-SharedResourceRunner: X11GLXContext.createContextARBImpl: 4.5 (Core profile, arb, compat[], hardware) - @creation, handle 0x3c00002, share 0x0, direct true, glXCreateContextAttribsARB: 0x7f971218a420
+main-SharedResourceRunner: createContextARBImpl: OK 4.5 (Core profile, arb, compat[], hardware) - @creation, share 0, direct true
+main-SharedResourceRunner: GLContext.setGLFuncAvail: Given X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x7f96fc000b90, owner true, ResourceToolkitLock[obj 0x63f2e64b, isOwner true, <26f07451, 1bae56e1>[count 2, qsz 0, owner <main-SharedResourceRunner>]]] - 4.5 (Core profile, arb, compat[], hardware) - 4.5.0 NVIDIA 355.11, Number(Str) 4.5.0
+main-SharedResourceRunner: GLContext.setGLFuncAvail: Pre version verification - expected 4.5 (Core profile, arb, compat[], hardware), strictMatch true, glVersionsMapping true
+main-SharedResourceRunner: GLContext.setGLFuncAvail: Version verification (Int): String 4.5.0 NVIDIA 355.11, Number(Int) 4.5.0
+main-SharedResourceRunner: GLContext.setGLFuncAvail: Post version verification req 4.5 (Core profile, arb, compat[], hardware) -> has 4.5 (Core profile, arb, compat[], hardware), strictMatch true, versionValidated true, versionGL3IntOK true
+Quirks local.0: []
+Quirks local.X: []
+Quirks sticky on X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x7f96fc000b90, owner true, ResourceToolkitLock[obj 0x63f2e64b, isOwner true, <26f07451, 1bae56e1>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]: []
+main-SharedResourceRunner: GLContext.setGLFuncAvail.0 validated FQN: .x11_:0.0_0-0x4050005 - 4.5 (Core profile, arb, compat[], hardware) - 4.5.0 NVIDIA 355.11
+main-SharedResourceRunner: Initializing GLX extension address table: GLX-.x11_:0.0_0
+main-SharedResourceRunner: GLContext GLX ProcAddressTable reusing key(GLX-.x11_:0.0_0) -> 0x61a759dc
+main-SharedResourceRunner: GLContext GL ProcAddressTable mapping key(.x11_:0.0_0-0x4050005) -> 0x65de398e
+main-SharedResourceRunner:ExtensionAvailabilityCache: Pre-caching init jogamp.opengl.gl4.GL4bcImpl@7caae4ef, OpenGL 4.5 (Core profile, arb, compat[], hardware) - 4.5.0 NVIDIA 355.11
+main-SharedResourceRunner:ExtensionAvailabilityCache: Pre-caching extension availability OpenGL 4.5 (Core profile, arb, compat[], hardware) - 4.5.0 NVIDIA 355.11, use glGetStringi
+main-SharedResourceRunner:ExtensionAvailabilityCache: GL_EXTENSIONS: 314, used glGetStringi
+GLX Version client 1.4.0, server: 1.4.0
+GLX extensions (glXGetClientString): GLX_ARB_get_proc_address GLX_ARB_multisample GLX_EXT_visual_info GLX_EXT_visual_rating GLX_EXT_import_context GLX_SGI_video_sync GLX_NV_swap_group GLX_NV_video_out GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGI_swap_control GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_buffer_age GLX_ARB_create_context GLX_ARB_create_context_profile GLX_NV_float_buffer GLX_ARB_fbconfig_float GLX_EXT_fbconfig_packed_float GLX_EXT_texture_from_pixmap GLX_EXT_framebuffer_sRGB GLX_NV_present_video GLX_NV_copy_image GLX_NV_copy_buffer GLX_NV_multisample_coverage GLX_NV_video_capture GLX_EXT_create_context_es_profile GLX_EXT_create_context_es2_profile GLX_ARB_create_context_robustness GLX_NV_delay_before_swap GLX_EXT_stereo_tree GLX_ARB_context_flush_control 
+GLX extensions (glXQueryExtensionsString): GLX_EXT_visual_info GLX_EXT_visual_rating GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGI_video_sync GLX_SGI_swap_control GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_texture_from_pixmap GLX_EXT_buffer_age GLX_ARB_create_context GLX_ARB_create_context_profile GLX_EXT_create_context_es_profile GLX_EXT_create_context_es2_profile GLX_ARB_create_context_robustness GLX_NV_delay_before_swap GLX_EXT_stereo_tree GLX_ARB_context_flush_control GLX_ARB_multisample GLX_NV_float_buffer GLX_ARB_fbconfig_float GLX_EXT_framebuffer_sRGB GLX_NV_multisample_coverage GLX_NV_copy_image GLX_ARB_get_proc_address 
+GLX extensions (glXQueryServerString): GLX_EXT_visual_info GLX_EXT_visual_rating GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGI_video_sync GLX_SGI_swap_control GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_texture_from_pixmap GLX_EXT_buffer_age GLX_ARB_create_context GLX_ARB_create_context_profile GLX_EXT_create_context_es_profile GLX_EXT_create_context_es2_profile GLX_ARB_create_context_robustness GLX_NV_delay_before_swap GLX_EXT_stereo_tree GLX_ARB_context_flush_control GLX_ARB_multisample GLX_NV_float_buffer GLX_ARB_fbconfig_float GLX_EXT_framebuffer_sRGB GLX_NV_multisample_coverage GLX_NV_copy_image 
+main-SharedResourceRunner:ExtensionAvailabilityCache: GLX_EXTENSIONS: 32
+main-SharedResourceRunner:ExtensionAvailabilityCache: GL vendor: NVIDIA Corporation
+main-SharedResourceRunner:ExtensionAvailabilityCache: ALL EXTENSIONS: 346
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_4_5 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_4_4 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_4_3 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_4_2 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_4_1 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_4_0 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_3_3 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_3_2 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_3_1 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_3_0 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_2_1 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_2_0 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_1_5 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_1_4 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_1_3 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_1_2 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_1_1 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_1_0 to known extensions
+main-SharedResourceRunner: GLContext GL ExtensionAvailabilityCache mapping key(.x11_:0.0_0-0x4050005) -> 0x23c7a510 - entries: 365
+main-SharedResourceRunner: GLContext.setGLFuncAvail.X: OK .x11_:0.0_0-0x4050005 - 4.5 (Core profile, arb, compat[ES2, ES3, ES31], FBO, hardware) - glErr 0x0
+main-SharedResourceRunner: createContextARBVersions.X: ctx 0x7f96fc35aa20, share 0, direct true, version 4.5, major[4..4], minor[0..5]
+GLContext.mapAvailableGLVersion: X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x7f96fc000b90, owner true, ResourceToolkitLock[obj 0x63f2e64b, isOwner true, <26f07451, 1bae56e1>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]: 4.0 (Core profile, compat[], hardware) -> 4.5 (Core profile, arb, compat[ES2, ES3, ES31], FBO, hardware)
+main-SharedResourceRunner: createContextARB-MapVersionsAvailable HAVE: 4.4 -> 4.5 (Core profile, arb, compat[ES2, ES3, ES31], FBO, hardware) - 4.5.0 NVIDIA 355.11
+GLContext.mapAvailableGLVersion: X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x7f96fc000b90, owner true, ResourceToolkitLock[obj 0x63f2e64b, isOwner true, <26f07451, 1bae56e1>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]: 3.0 (Core profile, compat[], hardware) -> 4.5 (Core profile, arb, compat[ES2, ES3, ES31], FBO, hardware)
+main-SharedResourceRunner: GLContext.resetStates(isInit false)
+main-SharedResourceRunner: createContextARBVersions.1: share 0, direct true, version 4.5, major[4..4], minor[0..5]
+main-SharedResourceRunner: Initializing GLX extension address table: GLX-.x11_:0.0_0
+main-SharedResourceRunner: GLContext GLX ProcAddressTable reusing key(GLX-.x11_:0.0_0) -> 0x61a759dc
+main-SharedResourceRunner: X11GLXContext.createContextARBImpl: 4.5 (Compat profile, arb, compat[], hardware) - @creation, handle 0x3c00002, share 0x0, direct true, glXCreateContextAttribsARB: 0x7f971218a420
+main-SharedResourceRunner: createContextARBImpl: OK 4.5 (Compat profile, arb, compat[], hardware) - @creation, share 0, direct true
+main-SharedResourceRunner: GLContext.setGLFuncAvail: Given X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x7f96fc000b90, owner true, ResourceToolkitLock[obj 0x63f2e64b, isOwner true, <26f07451, 1bae56e1>[count 2, qsz 0, owner <main-SharedResourceRunner>]]] - 4.5 (Compat profile, arb, compat[], hardware) - 4.5.0 NVIDIA 355.11, Number(Str) 4.5.0
+main-SharedResourceRunner: GLContext.setGLFuncAvail: Pre version verification - expected 4.5 (Compat profile, arb, compat[], hardware), strictMatch true, glVersionsMapping true
+main-SharedResourceRunner: GLContext.setGLFuncAvail: Version verification (Int): String 4.5.0 NVIDIA 355.11, Number(Int) 4.5.0
+main-SharedResourceRunner: GLContext.setGLFuncAvail: Post version verification req 4.5 (Compat profile, arb, compat[], hardware) -> has 4.5 (Compat profile, arb, compat[], hardware), strictMatch true, versionValidated true, versionGL3IntOK true
+Quirks local.0: []
+Quirks local.X: []
+Quirks sticky on X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x7f96fc000b90, owner true, ResourceToolkitLock[obj 0x63f2e64b, isOwner true, <26f07451, 1bae56e1>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]: []
+main-SharedResourceRunner: GLContext.setGLFuncAvail.0 validated FQN: .x11_:0.0_0-0x4050003 - 4.5 (Compat profile, arb, compat[], hardware) - 4.5.0 NVIDIA 355.11
+main-SharedResourceRunner: Initializing GLX extension address table: GLX-.x11_:0.0_0
+main-SharedResourceRunner: GLContext GLX ProcAddressTable reusing key(GLX-.x11_:0.0_0) -> 0x61a759dc
+main-SharedResourceRunner: GLContext GL ProcAddressTable mapping key(.x11_:0.0_0-0x4050003) -> 0x7c6c6922
+Info: setGL (OpenGL null): main-SharedResourceRunner, <null> -> GL4bcImpl, jogamp.opengl.gl4.GL4bcImpl@629dbc9a
+    [2]: jogamp.opengl.GLContextImpl.setGL(GLContextImpl.java:347)
+    [3]: jogamp.opengl.GLContextImpl.setGLFunctionAvailability(GLContextImpl.java:1731)
+    [4]: jogamp.opengl.GLContextImpl.createContextARBVersions(GLContextImpl.java:1208)
+    [5]: jogamp.opengl.GLContextImpl.createContextARBMapVersionsAvailable(GLContextImpl.java:1146)
+    [6]: jogamp.opengl.GLContextImpl.mapGLVersions(GLContextImpl.java:1050)
+    [7]: jogamp.opengl.GLContextImpl.createContextARB(GLContextImpl.java:958)
+    [8]: jogamp.opengl.x11.glx.X11GLXContext.createImpl(X11GLXContext.java:385)
+    [9]: jogamp.opengl.GLContextImpl.makeCurrentWithinLock(GLContextImpl.java:759)
+    [10]: jogamp.opengl.GLContextImpl.makeCurrent(GLContextImpl.java:642)
+    [11]: jogamp.opengl.GLContextImpl.makeCurrent(GLContextImpl.java:580)
+    [12]: jogamp.opengl.x11.glx.X11GLXDrawableFactory$SharedResourceImplementation.createSharedResource(X11GLXDrawableFactory.java:297)
+    [13]: jogamp.opengl.SharedResourceRunner.run(SharedResourceRunner.java:297)
+    [14]: java.lang.Thread.run(Thread.java:745)
+main-SharedResourceRunner:ExtensionAvailabilityCache: Pre-caching init jogamp.opengl.gl4.GL4bcImpl@629dbc9a, OpenGL 4.5 (Compat profile, arb, compat[], hardware) - 4.5.0 NVIDIA 355.11
+main-SharedResourceRunner:ExtensionAvailabilityCache: Pre-caching extension availability OpenGL 4.5 (Compat profile, arb, compat[], hardware) - 4.5.0 NVIDIA 355.11, use glGetStringi
+main-SharedResourceRunner:ExtensionAvailabilityCache: GL_EXTENSIONS: 315, used glGetStringi
+GLX Version client 1.4.0, server: 1.4.0
+GLX extensions (glXGetClientString): GLX_ARB_get_proc_address GLX_ARB_multisample GLX_EXT_visual_info GLX_EXT_visual_rating GLX_EXT_import_context GLX_SGI_video_sync GLX_NV_swap_group GLX_NV_video_out GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGI_swap_control GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_buffer_age GLX_ARB_create_context GLX_ARB_create_context_profile GLX_NV_float_buffer GLX_ARB_fbconfig_float GLX_EXT_fbconfig_packed_float GLX_EXT_texture_from_pixmap GLX_EXT_framebuffer_sRGB GLX_NV_present_video GLX_NV_copy_image GLX_NV_copy_buffer GLX_NV_multisample_coverage GLX_NV_video_capture GLX_EXT_create_context_es_profile GLX_EXT_create_context_es2_profile GLX_ARB_create_context_robustness GLX_NV_delay_before_swap GLX_EXT_stereo_tree GLX_ARB_context_flush_control 
+GLX extensions (glXQueryExtensionsString): GLX_EXT_visual_info GLX_EXT_visual_rating GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGI_video_sync GLX_SGI_swap_control GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_texture_from_pixmap GLX_EXT_buffer_age GLX_ARB_create_context GLX_ARB_create_context_profile GLX_EXT_create_context_es_profile GLX_EXT_create_context_es2_profile GLX_ARB_create_context_robustness GLX_NV_delay_before_swap GLX_EXT_stereo_tree GLX_ARB_context_flush_control GLX_ARB_multisample GLX_NV_float_buffer GLX_ARB_fbconfig_float GLX_EXT_framebuffer_sRGB GLX_NV_multisample_coverage GLX_NV_copy_image GLX_ARB_get_proc_address 
+GLX extensions (glXQueryServerString): GLX_EXT_visual_info GLX_EXT_visual_rating GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGI_video_sync GLX_SGI_swap_control GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_texture_from_pixmap GLX_EXT_buffer_age GLX_ARB_create_context GLX_ARB_create_context_profile GLX_EXT_create_context_es_profile GLX_EXT_create_context_es2_profile GLX_ARB_create_context_robustness GLX_NV_delay_before_swap GLX_EXT_stereo_tree GLX_ARB_context_flush_control GLX_ARB_multisample GLX_NV_float_buffer GLX_ARB_fbconfig_float GLX_EXT_framebuffer_sRGB GLX_NV_multisample_coverage GLX_NV_copy_image 
+main-SharedResourceRunner:ExtensionAvailabilityCache: GLX_EXTENSIONS: 32
+main-SharedResourceRunner:ExtensionAvailabilityCache: GL vendor: NVIDIA Corporation
+main-SharedResourceRunner:ExtensionAvailabilityCache: ALL EXTENSIONS: 347
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_4_5 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_4_4 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_4_3 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_4_2 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_4_1 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_4_0 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_3_3 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_3_2 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_3_1 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_3_0 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_2_1 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_2_0 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_1_5 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_1_4 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_1_3 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_1_2 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_1_1 to known extensions
+main-SharedResourceRunner:ExtensionAvailabilityCache: Added GL_VERSION_1_0 to known extensions
+main-SharedResourceRunner: GLContext GL ExtensionAvailabilityCache mapping key(.x11_:0.0_0-0x4050003) -> 0x695300b1 - entries: 366
+main-SharedResourceRunner: GLContext.setGLFuncAvail.X: OK .x11_:0.0_0-0x4050003 - 4.5 (Compat profile, arb, compat[ES2, ES3, ES31], FBO, hardware) - glErr 0x0
+main-SharedResourceRunner: createContextARBVersions.X: ctx 0x7f96fc35a8a0, share 0, direct true, version 4.5, major[4..4], minor[0..5]
+GLContext.mapAvailableGLVersion: X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x7f96fc000b90, owner true, ResourceToolkitLock[obj 0x63f2e64b, isOwner true, <26f07451, 1bae56e1>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]: 4.0 (Compat profile, compat[], hardware) -> 4.5 (Compat profile, arb, compat[ES2, ES3, ES31], FBO, hardware)
+main-SharedResourceRunner: createContextARB-MapVersionsAvailable HAVE: 4.2 -> 4.5 (Compat profile, arb, compat[ES2, ES3, ES31], FBO, hardware) - 4.5.0 NVIDIA 355.11
+GLContext.mapAvailableGLVersion: X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x7f96fc000b90, owner true, ResourceToolkitLock[obj 0x63f2e64b, isOwner true, <26f07451, 1bae56e1>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]: 3.0 (Compat profile, compat[], hardware) -> 4.5 (Compat profile, arb, compat[ES2, ES3, ES31], FBO, hardware)
+GLContext.mapAvailableGLVersion: X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x7f96fc000b90, owner true, ResourceToolkitLock[obj 0x63f2e64b, isOwner true, <26f07451, 1bae56e1>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]: 2.0 (Compat profile, compat[], hardware) -> 4.5 (Compat profile, arb, compat[ES2, ES3, ES31], FBO, hardware)
+main-SharedResourceRunner: GLContext.resetStates(isInit false)
+main-SharedResourceRunner: createContextARB: SET mappedVersionsAvailableSet .x11_:0.0_0
+.egl_decon_0-0x1080000: 1.1 (ES profile, compat[FP32], hardware)
+.egl_decon_0-0x2080000: 3.1 (ES profile, compat[ES2, ES3, ES31], FBO, hardware)
+.x11_:0.0_0-0x2020000: 4.5 (Compat profile, arb, compat[ES2, ES3, ES31], FBO, hardware)
+.x11_:0.0_0-0x3040000: 4.5 (Core profile, arb, compat[ES2, ES3, ES31], FBO, hardware)
+.x11_:0.0_0-0x3020000: 4.5 (Compat profile, arb, compat[ES2, ES3, ES31], FBO, hardware)
+.egl_decon_0-0x3080000: 3.1 (ES profile, compat[ES2, ES3, ES31], FBO, hardware)
+.x11_:0.0_0-0x4020000: 4.5 (Compat profile, arb, compat[ES2, ES3, ES31], FBO, hardware)
+.x11_:0.0_0-0x4040000: 4.5 (Core profile, arb, compat[ES2, ES3, ES31], FBO, hardware)
+GLContextImpl.mapGLVersions: X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x7f96fc000b90, owner true, ResourceToolkitLock[obj 0x63f2e64b, isOwner true, <26f07451, 1bae56e1>[count 2, qsz 0, owner <main-SharedResourceRunner>]]], profileAliasing: true, total 19.613818ms
+.egl_decon_0-0x1080000: 1.1 (ES profile, compat[FP32], hardware)
+.egl_decon_0-0x2080000: 3.1 (ES profile, compat[ES2, ES3, ES31], FBO, hardware)
+.x11_:0.0_0-0x2020000: 4.5 (Compat profile, arb, compat[ES2, ES3, ES31], FBO, hardware)
+.x11_:0.0_0-0x3040000: 4.5 (Core profile, arb, compat[ES2, ES3, ES31], FBO, hardware)
+.x11_:0.0_0-0x3020000: 4.5 (Compat profile, arb, compat[ES2, ES3, ES31], FBO, hardware)
+.egl_decon_0-0x3080000: 3.1 (ES profile, compat[ES2, ES3, ES31], FBO, hardware)
+.x11_:0.0_0-0x4020000: 4.5 (Compat profile, arb, compat[ES2, ES3, ES31], FBO, hardware)
+.x11_:0.0_0-0x4040000: 4.5 (Core profile, arb, compat[ES2, ES3, ES31], FBO, hardware)
+main-SharedResourceRunner: createContextARB: Requested GLProfile[GL2/GL2.sw] -> 2.0 (Compat profile, compat[], hardware)
+main-SharedResourceRunner: createContextARB: Mapped 4.5 (Compat profile, arb, compat[ES2, ES3, ES31], FBO, hardware)
+main-SharedResourceRunner: Initializing GLX extension address table: GLX-.x11_:0.0_0
+main-SharedResourceRunner: GLContext GLX ProcAddressTable reusing key(GLX-.x11_:0.0_0) -> 0x61a759dc
+main-SharedResourceRunner: X11GLXContext.createContextARBImpl: 4.5 (Compat profile, arb, compat[ES2, ES3, ES31], FBO, hardware) - @creation, handle 0x3c00002, share 0x0, direct true, glXCreateContextAttribsARB: 0x7f971218a420
+main-SharedResourceRunner: createContextARBImpl: OK 4.5 (Compat profile, arb, compat[ES2, ES3, ES31], FBO, hardware) - @creation, share 0, direct true
+main-SharedResourceRunner: GLContext.setGLFuncAvail: Given X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x7f96fc000b90, owner true, ResourceToolkitLock[obj 0x63f2e64b, isOwner true, <26f07451, 1bae56e1>[count 2, qsz 0, owner <main-SharedResourceRunner>]]] - 4.5 (Compat profile, arb, compat[ES2, ES3, ES31], FBO, hardware) - 4.5.0 NVIDIA 355.11, Number(Str) 4.5.0
+main-SharedResourceRunner: GLContext.setGLFuncAvail: Pre version verification - expected 4.5 (Compat profile, arb, compat[ES2, ES3, ES31], FBO, hardware), strictMatch false, glVersionsMapping false
+main-SharedResourceRunner: GLContext.setGLFuncAvail: Version verification (Int): String 4.5.0 NVIDIA 355.11, Number(Int) 4.5.0
+main-SharedResourceRunner: GLContext.setGLFuncAvail: Post version verification req 4.5 (Compat profile, arb, compat[ES2, ES3, ES31], FBO, hardware) -> has 4.5 (Compat profile, arb, compat[ES2, ES3, ES31], FBO, hardware), strictMatch false, versionValidated true, versionGL3IntOK true
+Quirks local.0: []
+Quirks local.X: []
+Quirks sticky on X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x7f96fc000b90, owner true, ResourceToolkitLock[obj 0x63f2e64b, isOwner true, <26f07451, 1bae56e1>[count 2, qsz 0, owner <main-SharedResourceRunner>]]]: []
+main-SharedResourceRunner: GLContext.setGLFuncAvail.0 validated FQN: .x11_:0.0_0-0x4050003 - 4.5 (Compat profile, arb, compat[ES2, ES3, ES31], FBO, hardware) - 4.5.0 NVIDIA 355.11
+main-SharedResourceRunner: Initializing GLX extension address table: GLX-.x11_:0.0_0
+main-SharedResourceRunner: GLContext GLX ProcAddressTable reusing key(GLX-.x11_:0.0_0) -> 0x61a759dc
+main-SharedResourceRunner: GLContext GL ProcAddressTable reusing key(.x11_:0.0_0-0x4050003) -> 0x7c6c6922
+Info: setGL (OpenGL null): main-SharedResourceRunner, <null> -> GL4bcImpl, jogamp.opengl.gl4.GL4bcImpl@3194fb79
+    [2]: jogamp.opengl.GLContextImpl.setGL(GLContextImpl.java:347)
+    [3]: jogamp.opengl.GLContextImpl.setGLFunctionAvailability(GLContextImpl.java:1731)
+    [4]: jogamp.opengl.GLContextImpl.createContextARB(GLContextImpl.java:982)
+    [5]: jogamp.opengl.x11.glx.X11GLXContext.createImpl(X11GLXContext.java:385)
+    [6]: jogamp.opengl.GLContextImpl.makeCurrentWithinLock(GLContextImpl.java:759)
+    [7]: jogamp.opengl.GLContextImpl.makeCurrent(GLContextImpl.java:642)
+    [8]: jogamp.opengl.GLContextImpl.makeCurrent(GLContextImpl.java:580)
+    [9]: jogamp.opengl.x11.glx.X11GLXDrawableFactory$SharedResourceImplementation.createSharedResource(X11GLXDrawableFactory.java:297)
+    [10]: jogamp.opengl.SharedResourceRunner.run(SharedResourceRunner.java:297)
+    [11]: java.lang.Thread.run(Thread.java:745)
+main-SharedResourceRunner: GLContext GL ExtensionAvailabilityCache reusing key(.x11_:0.0_0-0x4050003) -> 0x695300b1 - entries: 366
+main-SharedResourceRunner: GLContext.setGLFuncAvail.X: OK .x11_:0.0_0-0x4050003 - 4.5 (Compat profile, arb, compat[ES2, ES3, ES31], FBO, hardware) - glErr 0x0
+main-SharedResourceRunner: createImpl: OK (ARB, initial) share 0x0
+main-SharedResourceRunner: createImpl: OK direct true/true
+main-SharedResourceRunner: Create GL context OK: For jogamp.opengl.x11.glx.X11GLXContext - 4.5 (Compat profile, arb, compat[ES2, ES3, ES31], FBO, hardware) - 4.5.0 NVIDIA 355.11 - obj 0x25c081e0, ctx 0x7f96fc35a8a0, isShared false, surf true 0x3c00002, <1af83dc0, 7c511036>[count 1, qsz 0, owner <main-SharedResourceRunner>]
+GLDebugMessageHandler.init(false)
+GLDebugMessageHandler: GL DEBUG not set in ARB ctx options: 4.5 (Compat profile, arb, compat[ES2, ES3, ES31], FBO, hardware) - 4.5.0 NVIDIA 355.11
+GLDebugMessageHandler.init(false) .. n/a
+X11Util.Display: openDisplay [reuse false] NamedX11Display[:0.0, 0x7f96fc300cf0, refCount 1, unCloseable false]. Thread main-SharedResourceRunner
+main-SharedResourceRunner - X11GraphicsDevice.getDefaultDisplay() of X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x7f96fc300cf0, owner true, ResourceToolkitLock[obj 0x25d14be7, isOwner false, <33883317, 68c51e9b>[count 0, qsz 0, owner <NULL>]]]: 0, count 1
+glXChooseFBConfig recommended fbcfg 0x10d, idx 0
+useRecommendedIndex true, skipCapsChooser true
+user  caps GLCaps[rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, dbl, mono  , hw, GLProfile[GL2/GL2.sw], on-scr[.]]
+fbcfg caps 60, availCaps GLCaps[glx vid 0x27, fbc 0x10d: rgba 8/8/8/0, opaque, accum-rgba 16/16/16/16, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GL2/GL2.sw], on-scr[.]]
+X11GLXGraphicsConfiguration.chooseGraphicsConfigurationFBConfig: got configs: 1
+0: GLCaps[glx vid 0x27, fbc 0x10d: rgba 8/8/8/0, opaque, accum-rgba 16/16/16/16, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GL2/GL2.sw], on-scr[.]]
+X11GLXGraphicsConfiguration.chooseGraphicsConfigurationStatic(visualID 0x0, X11GraphicsScreen[X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x7f96fc300cf0, owner true, ResourceToolkitLock[obj 0x25d14be7, isOwner false, <33883317, 68c51e9b>[count 0, qsz 0, owner <NULL>]]], idx 0],GLCaps[rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, dbl, mono  , hw, GLProfile[GL2/GL2.sw], on-scr[.]]): X11GLXGraphicsConfiguration[X11GraphicsScreen[X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x7f96fc300cf0, owner true, ResourceToolkitLock[obj 0x25d14be7, isOwner false, <33883317, 68c51e9b>[count 0, qsz 0, owner <NULL>]]], idx 0], visualID 0x27, fbConfigID 0x10d,
+	requested GLCaps[rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, dbl, mono  , hw, GLProfile[GL2/GL2.sw], on-scr[.]],
+	chosen    GLCaps[glx vid 0x27, fbc 0x10d: rgba 8/8/8/0, opaque, accum-rgba 16/16/16/16, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GL2/GL2.sw], on-scr[.]]]
+main-SharedResourceRunner: setRealized: drawable X11OnscreenGLXDrawable, surface WrappedSurface, isProxySurface true: false -> true
+    [2]: jogamp.opengl.GLDrawableImpl.setRealized(GLDrawableImpl.java:184)
+    [3]: jogamp.opengl.GLDrawableFactoryImpl.probeSurfacelessCtx(GLDrawableFactoryImpl.java:123)
+    [4]: jogamp.opengl.x11.glx.X11GLXDrawableFactory.access$300(X11GLXDrawableFactory.java:83)
+    [5]: jogamp.opengl.x11.glx.X11GLXDrawableFactory$SharedResourceImplementation.createSharedResource(X11GLXDrawableFactory.java:301)
+    [6]: jogamp.opengl.SharedResourceRunner.run(SharedResourceRunner.java:297)
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f971216539d, pid=6098, tid=140286583895808
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_51-b16) (build 1.8.0_51-b16)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.51-b03 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libGL.so.1+0x5239d]    [7]: java.lang.Thread.run(Thread.java:745)
+X11GLXGraphicsConfiguration.updateGraphicsConfiguration kept:X11GLXGraphicsConfiguration[X11GraphicsScreen[X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x7f96fc300cf0, owner true, ResourceToolkitLock[obj 0x25d14be7, isOwner true, <33883317, 68c51e9b>[count 1, qsz 0, owner <main-SharedResourceRunner>]]], idx 0], visualID 0x27, fbConfigID 0x10d,
+	requested GLCaps[rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, dbl, mono  , hw, GLProfile[GL2/GL2.sw], on-scr[.]],
+	chosen    GLCaps[glx vid 0x27, fbc 0x10d: rgba 8/8/8/0, opaque, accum-rgba 16/16/16/16, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GL2/GL2.sw], on-scr[.]]]
+main-SharedResourceRunner: X11GLXDrawable.setRealized(true): X11GLXGraphicsConfiguration[X11GraphicsScreen[X11GraphicsDevice[type .x11, connection :0.0, unitID 0, handle 0x7f96fc300cf0, owner true, ResourceToolkitLock[obj 0x25d14be7, isOwner true, <33883317, 68c51e9b>[count 1, qsz 0, owner <main-SharedResourceRunner>]]], idx 0], visualID 0x27, fbConfigID 0x10d,
+
+	requested GLCaps[rgba 8/8/8/0, opaque, accum-rgba 0/0/0/0, dp/st/ms 16/0/0, dbl, mono  , hw, GLProfile[GL2/GL2.sw], on-scr[.]],
+#
+	chosen    GLCaps[glx vid 0x27, fbc 0x10d: rgba 8/8/8/0, opaque, accum-rgba 16/16/16/16, dp/st/ms 24/0/0, dbl, mono  , hw, GLProfile[GL2/GL2.sw], on-scr[.]]]
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+main-SharedResourceRunner: GLContext.makeCurrent: Surfaceless evaluate
+# An error report file with more information is saved as:
+# /home/dwayne/work/jme3/sandbox_jme3_jogl/hs_err_pid6098.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+:exec FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':exec'.
+> Process 'command '/home/dwayne/bin/soft/jdk1.8.0_51/bin/java'' finished with non-zero exit value 134
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 3.532 secs
