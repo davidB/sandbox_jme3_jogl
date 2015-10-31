@@ -33,7 +33,9 @@ def jme_group = 'com.jme3'
 dependencies {
 	compile "${jme_group}:jme3-core:${jme_version}"
 	runtime "${jme_group}:jme3-jogl:${jme_version}"
+	runtime "${jme_group}:jme3-lwjgl:${jme_version}"
 	runtime "${jme_group}:jme3-desktop:${jme_version}"
+	runtime "net.alchim31.assets:crytek_sponza2:0.1.0"
 }
 
 
