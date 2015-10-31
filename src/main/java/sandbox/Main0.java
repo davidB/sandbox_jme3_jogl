@@ -17,8 +17,8 @@ public class Main0 {
     		//settings.setFullscreen(false);
     		//settings.setDepthBits(24);
     		//settings.setGammaCorrection(true);
-    		settings.setRenderer("JOGL");
-    		settings.setAudioRenderer("JOAL");
+    		settings.setRenderer(AppSettings.JOGL_OPENGL_FORWARD_COMPATIBLE);
+    		settings.setAudioRenderer(AppSettings.JOAL);
     		SimpleApplication app = new SimpleApplication() {
     			@Override
           public void simpleInitApp() {
